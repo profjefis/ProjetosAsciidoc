@@ -1,0 +1,221 @@
+:title: Termodinâmica
+:author: Jefferson Rodrigues de Oliveira 
+:email: jefferson.oliveira@ifes.edu.br
+:date: \today
+:toc: left
+:sectnums: 0
+:stem: latexmath
+:imagesdir: images
+
+== Objetivos
+
+Caro aluno, logo abaixo é apresentarei *os principais objetivos que você deve alcançar* ao estudar este capítulo:
+
+- *Compreender* processos em que o fornecimento de calor a um sistema, ou corpo, pode produzir aumento de seu volume, resultando na realização de trabalho.
+- *Compreender* o primeiro princípio da termodinâmica: a quantidade de calor fornecida a um sistema é igual ao trabalho que ele realiza mais a variação de sua energia interna.
+- *Compreender* que o Primeiro Princípio da Termodinâmica expressa quantitativamente a Lei de Conservação da Energia.
+- Saber *aplicar* o Primeiro Princípio da Termodinâmica para resolver problemas envolvendo calor, trabalho e energia interna de um sistema.
+- *Compreender* que o funcionamento de máquinas térmicas requer sempre troca de calor entre duas fontes, uma quente e outra fria.
+- *Compreender* que, numa máquina térmica, só uma parte do calor fornecido é transformado em trabalho.
+
+== Introdução
+
+Primeiramente, temos que compreender o *contexto histório* relacionado com o tema em estudo. No século XVIII surgiram as primeiras máquinas a valor, nelas o valor aquecido em um cilíndro, empurra um pistão em que produz o movimento desejado. Sendo assim, temos então a transformação de calor em trabalho. Essas máquinas desempenharam um papel bastante importante durante a *Revolução Industrial*.
+
+image::img1.jpg[title="Transformação de calor em trabalho. Fonte: osfundamentosdafisica"]
+
+Durante o século XIX, o *calor* foi reconhecido com uma *forma de energia* e que foi estabelecido o *Princípio da Conservação da Energia*. Nessa época passou-se a usar o termo *Termodinâmica* para designar o estudo das transformações entre energia mecânica (*trabalho*) em energia térmica (*calor*).
+
+As *Leis da Termodinâmica* que iremos estudar, valem para quaisquer sistemas: sólidos, líquidos ou gasosos; no entanto, iremos aplicá-las apenas nos casos *mais simples*, ou seja, no caso em que o sistema estudado é um *gás ideal*. Desta forma, antes de apresentar essas Leis, vamos primeiramente comentar alguns fatos relacionados ao comportamento dos gases ideais.
+
+== Energia interna, trabalho e calor
+
+No estudo da Termodinâmica dos Gases Ideais, são parâmetros básicos as grandezas físicas: energia interna (*$U$*), trabalho (*$\tau$*) e a quantidade de calor (*$Q$*).
+
+Vejamos melhor cada uma dessas três grandezas.
+
+=== Energia interna
+
+A energia interna de um sistema é o somatório de vários tipos de energia existentes em suas partículas. Como vimos, no caso de uma gás perfeito (monoatômico) a energia interna se resume na energia de translação de suas partículas e, seu cálculo é o seguinte:
+
+\begin{equation*}
+    U=\dfrac{3}{2}nRT
+\end{equation*}
+
+Ou seja, a anergia interna depende apenas da temperatura (*$T$*) do sistema e varia de forma *linear*.
+
+Para uma transformação termodinâmica de uma gás monoatômico de $A\Rightarrow B$, temos que:
+
+\begin{equation*}
+    \Delta U = \dfrac{3}{2}nR\Delta T
+\{equation*}
+
+Onde $\Delta T = T_{B}-T_{A}$.
+
+Portanto:
+
+- *$T$* aumenta $\Rightarrow$ *$\Delta U > 0$*: a energia interna do gás aumenta.
+- *$T$* diminui $\Rightarrow$ *$\Delta U < 0$*: a energia interna do gás diminui.
+- *$T$* constante $\Rightarrow$ *$\Delta U = 0$*: a energia interna do gás não é alterada.
+
+Agora, relacionando a equação acima com a Lei de Clapeyron ($PV = nRT $), encontramos:
+
+\begin{equation*}
+    U = \dfrac{3}{2}pV\\
+\end{equation*}
+
+=== Trabalho
+
+De acordo como o que já foi estudado em *Mecânica*, sabemos que o todo *trabalho* é realizado por uma *força*. Vamos então considerar a *expansão* de um *gás perfeito* submetido a uma *pressão constante* (transformação isobárica).
+
+image::img2.png[title="Trabalho de um gás. Fonte: osfundamentosdafisica"]
+
+\begin{align*}
+    \tau &= Fd \\
+    \tau &= pAd
+\end{align*}
+
+Mas, $Ad=\Delta V$ (variação de volume). Portanto:
+
+\begin{equation*}\label{eq:trabalho}
+    \tau = p\Delta V
+\end{equation*}
+
+Analisando o diagrama $p \times V$:
+
+image::img3.png[title="Diagrama I. Fonte: osfundamentosdafisica"]
+
+A área (*$A$*) do retângulo do diagrama acima é numericamente igual ao trabalho (*$\tau$*). De fato podemos perceber isto:
+
+\begin{align*}
+    \text{Área} &= \text{base} \times \text{altura} \\
+    A &= bh \\
+    A &= p\Delta V
+\end{align*}
+
+Sendo assim, podemos concluir que, em uma transformação isobárica, de fato, *o trabalho realizado é numericamente igual a área abaixo da curva*.
+
+Isso não é um fato exclusivo para este tipo de transformação. É possível fazer uma generalização para quaisquer tipo de transformação utilizando ferramentas de matemática superior, mas acredite, *vale para qualquer que seja a transformação*.
+
+Para analisar o trabalho de uma transformação, podemos adotar o seguinte:
+
+- *$V$* aumenta $\Rightarrow$ *$\tau > 0$*: o gás *realiza* trabalho.
+- *$V$* diminui $\Rightarrow$ *$\tau < 0$*: o gás *recebe* trabalho.
+- *$V$* constante $\Rightarrow$ *$\tau = 0$*: o gás *não realiza* trabalho.
+
+*Exercício Resolvido {counter:exeres}*
+
+Um gás sofre uma transformação *$A\Rightarrow B$* conforme indica o diagrama *$p\times V$*. Calcule o trabalho que o gás troca com o meio exterior.
+
+image::img4.1.png[title="Diagrama p x V. Fonte: osfundamentosdafisica"]
+
+[click.resposta]
+--
+O trabalho pode ser calculado como numericamente igual a área abaixo da curva (neste caso um trapézio).
+
+\begin{align*}
+    A &= \dfrac{(B+b)h}{2}\\
+    A &= \dfrac{(3\times 10^{5}+2\times 10^{5})(0,3-0,1)}{2}\\
+    A &= \dfrac{(5\times 10^{5})(0,2)}{2}\\
+    A &= + 5\times 10^{4}\; J
+\end{align*}
+
+O sinal positivo vem do fato do gás realizar trabalho (o volume do gás aumenta).
+--
+
+Caso o gás percorra um ciclo (*transformação cíclica*), isto é, o estado final coincide com o inicial, o trabalho trocado com o sistema é *numericamente igual a área do ciclo*.
+
+\begin{equation*}
+    \tau \stackrel{N}{=} A
+\end{equation*}
+
+image::img5.png[title="Diagrama II. Fonte: osfundamentosdafisica"]
+
+Podemos perceber que na transformação *$A\Rightarrow B$* o gás *realiza* trabalho e em *$C\Rightarrow D$*, *recebe*. O trabalho realizado é, em módulo, maior do que o recebido. Logo, *quando o ciclo é percorrido no sentido horário o gás realiza trabalho sobre o meio exterior*. Analogamente, *quando o ciclo é percorrido no sentido anti-horário o gás recebe trabalho do meio exterior*.
+
+image::img6.png[title="Diagrama II. Fonte: osfundamentosdafisica"]
+
+*Exercício Resolvido {counter:exeres}*
+
+Um gás sofre ume transformação cíclica $ABCDA$, conforme indicado no diagrama $p\times V$.
+
+image::img7.png[title="Diagrama p x V. Fonte: osfundamentosdafisica"]
+
+a) Sendo $T_{A} = 300 K$ a temperatura no estado representado pelo ponto $A$, determine as temperaturas em $B$, $C$ e $D$. +
+b) Calcule o trabalho que o gás troca com o meio exterior ao percorrer o ciclo. Neste ciclo o gás realiza ou recebe trabalho do meio exterior?
+
+[click.resposta]
+--
+a) $A\Rightarrow B$: *transformação isobárica*:
+\begin{align*}
+    \frac{V_{A}}{T_{A}} &= \dfrac{V_{B}}{T_{B}} \\
+    T_{B} &= T_{A}\left(\dfrac{V_{B}}{V_{A}}\right) \\
+    T_{B} &= 300\left(\dfrac{0,3}{0,1}\right) \\
+    T_{B} &= 900
+\end{align*}
+Ou seja $\boxed{T_{B} = 900\;K}$ +
+
+$B\Rightarrow C$: *transformação isocórica*:
+\begin{align*}
+    \frac{P_{B}}{T_{B}} &= \dfrac{P_{C}}{T_{C}} \\
+    T_{C} &= T_{B}\left(\dfrac{P_{C}}{P_{B}}\right) \\
+    T_{C} &= 900\left(\dfrac{2\times 10^{5}}{6\times 10^{5}}\right) \\
+    T_{C} &= 300
+\end{align*}
+Ou seja $\boxed{T_{B} = 300\;K}$ +
+
+$C\Rightarrow D$: *transformação isobárica*:
+\begin{align*}
+    \frac{V_{C}}{T_{C}} &= \dfrac{V_{D}}{T_{D}} \\
+    T_{D} &= T_{C}\left(\dfrac{V_{D}}{V_{C}}\right) \\
+    T_{D} &= 300\left(\dfrac{0,1}{0,3}\right) \\
+    T_{C} &= 100
+\end{align*}
+Ou seja $\boxed{T_{B} = 100\;K}$ +
+
+b) Aqui podemos utilizar a relação que o trabalho é numericamente igual a área do ciclo.
+\begin{align*}
+    A &= bh \\
+    A &= (0,3-0,1)(6\times 10^{5}-2\times 10^{5}) \\
+    A &= (0,2)(4\times 10^{5}) \\
+    A &= 8\times 10^{4}
+\end{align*}
+Ou seja, o trabalho é de: $\boxed{\tau = 8\times 10^{4}\;J}$ +
+Perceba que o sinal do trabalho deve ser *positivo*, pois o ciclo é percorrido no *sentido horário* (o gás *realiza* trabalho).
+--
+
+=== Calor
+
+Já estudamos que o calor é a energia térmica transitando de um sistema para outro. Assim, um dos sistemas cede essa energia e o outro, a recebe. Por convenção, *o calor recebido é positivo e o calor cedido, negativo*.
+
+== Lei Zero da Termodinâmica
+
+Como também já estudamos anteriormente, A Lei Zero da Termodinâmica trabalha o conceito de *equilíbrio térmico*. Essa lei diz que dois sistemas físicos estão em equilíbrio se, ao serem colocados em contato térmico, não há fluxo de calor entre eles. Sendo assim, se dois sistemas físicos, *A* e *B*, estão individualmente em equilíbrio térmico com um terceiro sistema *C*, então ambos estarão em equilíbrio térmico entre si (se $T_{a}=T_{c}$ e $T_{b}=T_{c}$, então $T_{a}=T_{b}$).
+
+== 1ª Lei da Termodinâmica
+
+A *1ª Lei da Termodinâmica* é a aplicação do *Princípio  da Conservação  da Energia*. Com a aplicação desta Lei, podemos, por meio de uma "contagem" energética, saber o que ocorrer um sistema gasoso ao sobre uma transformação termodinâmica.
+
+Imagine que um gás receba uma quantidade de calor igual $Q = 100\;J$. Vamos supor que o gás se expanda e realize um trabalho $\tau = 80\;J$. Os $20\;J$ restantes ficam armazenados no gás, aumentando sua energia interna ($\Delta U=20\;J$). As três formas de energia, $Q$,  $\tau$  e $\Delta U$ relacionam-se, constituindo a primeira lei da Termodinâmica:
+
+\begin{equation*}
+    \Delta U=Q-\tau
+\end{equation*}
+
+== Segunda Lei da Termodinâmica
+
+== Revisão
+
+== Exercícios de Revisão
+
+== Referências
+
+FERRARO, Nicolau Gilbert. "Propagação de calor". Blog Os Fundamentos da Física. Disponível em: https://osfundamentosdafisica.blogspot.com/
+
+HELERBROCKH, Rafael. "Ponto triplo da água"; Mundo Educação. Disponível em: https://mundoeducacao.uol.com.br/fisica/ponto-triplo-da-agua.htm. Acesso em 02 de agosto de 2020. 
+
+HELERBROCKH, Rafael. "Convecção"; Brasil Escola. Disponível em: https://brasilescola.uol.com.br/fisica/conveccao.htm. Acesso em 02 de agosto de 2020.
+
+RAMALHO JR, Francisco; FERRARO, Nicolau Gilberto; SOARES, Paulo Antônio de Toledo. Os Fundamentos da Física vol. 2. *Moderna, São Paulo*, 2007.
+
+VILLAS BÔAS, Newton; DOCA, Ricardo Helou; BISCUOLA, Gualter José. Tópicos de física, 2: termologia, ondulatória e óptica. **São Paulo: Saraiva**, 2012.

@@ -1,0 +1,12 @@
+\babel@toc {brazilian}{}
+\contentsline {section}{\numberline {1}Objetivos}{1}{section.1}%
+\contentsline {section}{\numberline {2}Raios de luz e feixes de luz}{1}{section.2}%
+\contentsline {section}{\numberline {3}Fontes de luz}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Velocidade da luz}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Ano-luz}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Classificação dos meios}{3}{section.4}%
+\contentsline {section}{\numberline {5}Fenômenos da Óptica Geométricas}{3}{section.5}%
+\contentsline {section}{\numberline {6}A cor de um corpo}{3}{section.6}%
+\contentsline {section}{\numberline {7}Princípios da Ótica Geométrica}{3}{section.7}%
+\contentsline {section}{\numberline {8}Sombra, penumbra e eclipse}{3}{section.8}%
+\contentsline {section}{\numberline {9}Referências}{3}{section.9}%

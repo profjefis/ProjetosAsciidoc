@@ -1,0 +1,355 @@
+%% Preamble %%
+%% A minimal LaTeX preamble
+%% Some packates are needed to implement
+%% Asciidoc features
+
+\documentclass[a4paper,twocolumn,twoside,12pt]{article}
+\setlength{\columnsep}{1cm}
+\usepackage[brazilian]{babel}
+\usepackage[left=3.00cm, right=2.00cm, top=3.00cm, bottom=2.00cm]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}               % ... or a4paper or a5paper or ...
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}       % Activate to begin paragraphs with an empty line rather than an indent
+
+\usepackage{tcolorbox}
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{epstopdf}
+\usepackage{color}
+% \usepackage[usenames, dvipsnames]{color}
+% \usepackage{alltt}
+
+
+\usepackage{amssymb}
+% \usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage[version=3]{mhchem}
+
+
+% Needed to properly typeset
+% standard unicode characters:
+%
+\RequirePackage{fix-cm}
+\usepackage{fontspec}
+\usepackage[Latin,Greek]{ucharclasses}
+%
+% NOTE: you must also use xelatex
+% as the typesetting engine
+
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{en}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {images/} }
+\DeclareGraphicsExtensions{.png, .jpg, jpeg, .pdf}
+
+\makeatletter
+\def\@maketitle{%
+	\begin{center}%
+		{\Large \@title \par}%
+		\vspace{0.5cm}
+		{\large \@author \par}%
+		\vspace{0.5cm}
+		{\normalsize Atualizado em: \@date}%
+	\end{center}%
+}
+\makeatother
+
+%% \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+%% Asciidoc TeX Macros %%
+
+
+% \pagecolor{black}
+%%%%%%%%%%%%
+
+
+% Needed for Asciidoc
+
+\newcommand{\admonition}[2]{\textbf{#1}: {#2}}
+\newcommand{\rolered}[1]{ \textcolor{red}{#1} }
+\newcommand{\roleblue}[1]{ \textcolor{blue}{#1} }
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{problem}{Problem}
+\newtheorem{exercise}{Exercise}
+\newtheorem{example}{Example}
+\newtheorem{note}{Note}
+\newtheorem{joke}{Joke}
+\newtheorem{objection}{Objection}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Extended quote environment with author
+
+\renewenvironment{quotation}
+{   \leftskip 4em \begin{em} }
+{\end{em}\par }
+
+\def\signed#1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip2em
+  \hbox{}\nobreak\hfil\raise-3pt\hbox{(#1)}%
+  \parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
+
+
+\newsavebox\mybox
+
+\newenvironment{aquote}[1]
+  {\savebox\mybox{#1}\begin{quotation}}
+  {\signed{\usebox\mybox}\end{quotation}}
+
+\newenvironment{tquote}[1]
+  {  {\bf #1} \begin{quotation} \\ }
+  { \end{quotation} }
+
+%% BOXES: http://tex.stackexchange.com/questions/83930/what-are-the-different-kinds-of-boxes-in-latex
+%% ENVIRONMENTS: https://www.sharelatex.com/learn/Environments
+
+\newenvironment{asciidocbox}
+  {\leftskip6em\rightskip6em\par}
+  {\par}
+
+\newenvironment{titledasciidocbox}[1]
+  {\leftskip6em\rightskip6em\par{\bf #1}\vskip-0.6em\par}
+  {\par}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% http://texblog.org/tag/rightskip/
+
+
+\newenvironment{preamble}
+  {}
+  {}
+
+%% http://tex.stackexchange.com/questions/99809/box-or-sidebar-for-additional-text
+%%
+\newenvironment{sidebar}[1][r]
+  {\wrapfigure{#1}{0.5\textwidth}\tcolorbox}
+  {\endtcolorbox\endwrapfigure}
+
+
+%%%%%%%%%%
+
+\newenvironment{comment*}
+  {\leftskip6em\rightskip6em\par}
+  {\par}
+
+  \newenvironment{remark*}
+  {\leftskip6em\rightskip6em\par}
+  {\par}
+
+
+%% Dummy environment for testing:
+
+\newenvironment{foo}
+  {\bf Foo.\ }
+  {}
+
+
+\newenvironment{foo*}
+  {\bf Foo.\ }
+  {}
+
+
+\newenvironment{click}
+  {\bf Click.\ }
+  {}
+
+\newenvironment{click*}
+  {\bf Click.\ }
+  {}
+
+\newenvironment{resposta}
+{\bf Resposta:\\ }
+{}
+
+\newenvironment{resposta*}
+{\bf Resposta:\\ }
+{}
+
+
+\newenvironment{remark}
+  {\bf Remark.\ }
+  {}
+
+\newenvironment{capsule}
+  {\leftskip10em\par}
+  {\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Style
+
+\parindent0pt
+\parskip8pt
+%% User Macros %%
+%% Front Matter %%
+
+\title{Fundamentos da Óptica Geométrica}
+\author{Jefferson Rodrigues de Oliveira}
+\date{02-11-2020}
+
+
+%% Begin Document %%
+
+\begin{document}
+\maketitle
+\tableofcontents
+\hypertarget{x-objetivos}{\section{Objetivos}}
+Caro aluno, logo abaixo apresentarei \textbf{os principais objetivos que você deve alcançar} ao estudar este conteúdo:
+
+
+\begin{itemize}
+
+\item \textbf{Compreender} processos em que o fornecimento de calor a um sistema, ou corpo, pode produzir aumento de seu volume, resultando na realização de trabalho.
+
+\item \textbf{Compreender} o primeiro princípio da termodinâmica: a quantidade de calor fornecida a um sistema é igual ao trabalho que ele realiza mais a variação de sua energia interna.
+
+\item \textbf{Compreender} que o Primeiro Princípio da Termodinâmica expressa quantitativamente a Lei de Conservação da Energia.
+
+\item \textbf{Saber aplicar} o Primeiro Princípio da Termodinâmica para resolver problemas envolvendo calor, trabalho e energia interna de um sistema.
+
+\item \textbf{Compreender} que o funcionamento de máquinas térmicas requer sempre troca de calor entre duas fontes, uma quente e outra fria.
+
+\item \textbf{Compreender} que, numa máquina térmica, só uma parte do calor fornecido é transformado em trabalho.
+
+\end{itemize}
+
+
+\hypertarget{x-raios-de-luz-e-feixes-de-luz}{\section{Raios de luz e feixes de luz}}
+A Óptica Geométrica estuda a \textbf{propagação da luz} nos diferentes meios e os fenômenos que dela decorrem: a \textbf{reflexão} e a \textbf{refração}. Este estudo é feito a partir da noção de \textbf{raio de luz} e de \textbf{princípios fundamentais}.
+
+
+Ondas de rádio, micro-ondas, radiações infravermelha e ultravioleta, luz, raios X, etc. São constituintes das chamadas \textbf{ondas eletromagnéticas}. A luz difere das demais ondas pelo fato de, ao incidir em nossas vidas, produzir as \textbf{sensações visuais}. Ou seja, a \textbf{luz} é o agente físico que, atuando nos órgãos visuais, é capaz de produzir a \textbf{sensação de visão}.
+
+
+Para que um observador possa enxergar um corpo, seus olhos devem receber a luz que este corpo emite.
+
+
+Para representar a luz emitida pela chama de uma vela que atinge a vista de um observador, utilizaremos linhas orientadas que fornecem a direção e o sentido de propagação da luz. Tais linhas são denominadas \textbf{raios de luz}.
+
+
+Na prática, é impossível isolar um raio de luz, que, na verdade, é apenas uma representação gráfica da luz em propagação. O que realmente existe são os chamados \textbf{feixes de luz}, que representamos graficamente como um conjunto de raios de luz. Os feixes de luz podem ser \textbf{paralelos}, \textbf{divergentes} ou \textbf{convergentes}.
+
+
+\hypertarget{x-fontes-de-luz}{\section{Fontes de luz}}
+Todos os corpos que emitem luz são chamados de \textbf{fontes de luz}.
+
+
+Podemos classificar estas fontes de acordo com a \textbf{emissão da luz}.
+
+
+\begin{itemize}
+
+\item \textbf{Fonte de luz primária (corpo luminoso)}: corpos que emitem a luz que eles produzem, ou seja, \textbf{emitem luz própria}. Exemplo: Sol, lâmpada elétrica acesa, chamas das velas, etc.
+
+\item \textbf{Fonte de luz secundária (corpo iluminado)}: corpos que emitem a luz que recebem de outros corpos, ou seja \textbf{não produzem luz própria}. Exemplo: a Lua, que envia à Terra a luz que recebe do Sol, das paredes iluminadas por uma lâmpada elétrica, etc.
+
+\end{itemize}
+
+
+Podemos também classificar estas fontes de acordo com suas \textbf{dimensões}:
+
+
+\begin{itemize}
+
+\item \textbf{Fonte de luz pontual (puntiforme)}: são fontes cujas dimensões são desprezíveis em relação à distância que a separam dos outros corpos. Exemplo: A maioria das estrelas, apesar delas serem enormes, as distância que as separam do nosso planeta são muito maiores.
+
+\item \textbf{Fonte de luz extensa}: são fontes cujas dimensões \textbf{não} são desprezíveis em relação à distância que a separam dos outros corpos. Exemplo: O Sol, observado da Terra.
+
+\end{itemize}
+
+
+Por fim, também podemos classificar estas fontes de acordo com suas cores:
+
+
+\begin{itemize}
+
+\item \textbf{Fonte de luz monocromática (simples)}: fonte de luz que apresentam apenas uma cor. Exemplo: a luz amarela emitida por lâmpadas de vapor de sódio.
+
+\item \textbf{Fonte de luz policromática (composta)}: fonte de luz que resulta da superposição de luzes de cores diferentes. Exemplo: a luz solar (branca).
+
+\end{itemize}
+
+
+\hypertarget{x-velocidade-da-luz}{\subsection{Velocidade da luz}}
+A velocidade da luz no vácuo é de $299792458\;m/s$, ou seja, aproximadamente $3,0\times 10^{8}\;m/s$. No \textbf{vácuo}, a luz apresenta \textbf{máxima velocidade}, independente da cor, ou seja, todas as cores apresentam a mesma velocidade igual a $c$. Entretanto, em meios materiais, as luzes monocromáticas apresentam velocidades diferentes, todas inferiores a $c$.
+
+
+\hypertarget{x-ano-luz}{\subsection{Ano-luz}}
+\textbf{Ano-luz} é a unidade de \textbf{comprimento} que corresponde à distância percorrida pela luz, no vácuo, durante um ano.
+
+
+Para se ter uma ideia da dimensão do ano-luz, vamos transformá-lo em metros e depois em quilômetros. Imagine que no instante $t=0$ um novo raio de luz partiu do Sol e vai para o "infinito". Vamos acompanhá-lo durante 1 ano e medir a distância percorrida.
+\begin{align*}
+    1\;ano  &= 365,25\;dias \\
+            &= 8776\;horas \\
+            &= 525960\;min \\
+            &= 31557600\;s \\
+            &\approx 3,16\times 10^{7}\;s
+\end{align*}
+Utilizando a fórmula da velocidade média:
+\begin{align*}
+    v &= \dfrac{\Delta S}{\Delta t} \\
+    c &= \dfrac{d}{t} \\
+    d &= c \cdot t \\
+    d &= 3,0\times 10^{8} \cdot 3,16\times 10^{7} \\
+    d &\approx 9,5 \times 10^{15}
+\end{align*}
+Sendo assim, a velocidade da luz no vácuo é de aproximadamente $9,5 \times\;10^{15}\;m$ ou $9,5 \times\;10^{12}\;km$
+
+
+Esta unidade é bastante utilizada na \textbf{Astronomia}, devido às distância das estrelas até o nosso planeta.
+
+
+\hypertarget{x-classificação-dos-meios}{\section{Classificação dos meios}}
+
+\hypertarget{x-fenômenos-da-óptica-geométricas}{\section{Fenômenos da Óptica Geométricas}}
+
+\hypertarget{x-a-cor-de-um-corpo}{\section{A cor de um corpo}}
+
+\hypertarget{x-princípios-da-ótica-geométrica}{\section{Princípios da Ótica Geométrica}}
+
+\hypertarget{x-sombra,-penumbra-e-eclipse}{\section{Sombra, penumbra e eclipse}}
+
+\hypertarget{x-referências}{\section{Referências}}
+CALÇADA, Caio Sérgio; SAMPAIO, José Luiz. Física Clássica: Termologia, Óptica e Ondas. Atual Editora, São Paulo, 2012.
+
+
+CAMPOS, Bruna Manuele. "Entropia – O que é? Características, Fórmula, Exemplos e Exercícios". Gestão Educacional. Disponível em: \href{https://www.gestaoeducacional.com.br/entropia-o-que-e-caracteristicas/}{https://www.gestaoeducacional.com.br/entropia-o-que-e-caracteristicas/}
+
+
+FERRARO, Nicolau Gilbert. "Termodinâmica". Blog Os Fundamentos da Física. Disponível em: \href{https://osfundamentosdafisica.blogspot.com/}{https://osfundamentosdafisica.blogspot.com/}
+
+
+RAMALHO JR, Francisco; FERRARO, Nicolau Gilberto; SOARES, Paulo Antônio de Toledo. Os Fundamentos da Física vol. 2. \textbf{Moderna, São Paulo}, 2007.
+
+
+VILLAS BÔAS, Newton; DOCA, Ricardo Helou; BISCUOLA, Gualter José. Tópicos de física, 2: termologia, ondulatória e óptica. \textbf{São Paulo: Saraiva}, 2012.
+
+
+\end{document}
+

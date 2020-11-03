@@ -1,0 +1,829 @@
+= Termodinâmica
+:author: Jefferson Rodrigues de Oliveira 
+:email: jefferson.oliveira@ifes.edu.br
+:revnumber: 1.0
+:toc: left
+:sectnums: 0
+:stem: latexmath
+:imagesdir: images
+:icons: font
+:stylesheet: asciidoctor.css
+include::locale/attributes-pt_BR.adoc[]
+
+== Objetivos
+
+Caro aluno, logo abaixo apresentarei *os principais objetivos que você deve alcançar* ao estudar este conteúdo:
+
+- *Compreender* processos em que o fornecimento de calor a um sistema, ou corpo, pode produzir aumento de seu volume, resultando na realização de trabalho.
+- *Compreender* o primeiro princípio da termodinâmica: a quantidade de calor fornecida a um sistema é igual ao trabalho que ele realiza mais a variação de sua energia interna.
+- *Compreender* que o Primeiro Princípio da Termodinâmica expressa quantitativamente a Lei de Conservação da Energia.
+- *Saber aplicar* o Primeiro Princípio da Termodinâmica para resolver problemas envolvendo calor, trabalho e energia interna de um sistema.
+- *Compreender* que o funcionamento de máquinas térmicas requer sempre troca de calor entre duas fontes, uma quente e outra fria.
+- *Compreender* que, numa máquina térmica, só uma parte do calor fornecido é transformado em trabalho.
+
+== Introdução
+
+Primeiramente, temos que compreender o *contexto histórico* relacionado com o tema em estudo. No *século XVIII* surgiram as primeiras máquinas a vapor, nelas o valor aquecido em um cilindro, empurra um pistão em que produz o movimento desejado. Desta forma, temos a transformação de calor em trabalho. Essas máquinas desempenharam um papel bastante importante durante a *Revolução Industrial*.
+
+image::img1.jpg[title="Transformação de calor em trabalho. Fonte: osfundamentosdafisica", align="center"]
+
+Durante o século XIX, o *calor* foi reconhecido com uma *forma de energia* e que foi estabelecido o *Princípio da Conservação da Energia*. Nessa época, passou-se a usar o termo *Termodinâmica* para designar o estudo das transformações entre energia mecânica (*trabalho*) em energia térmica (*calor*).
+
+As *Leis da Termodinâmica* que iremos estudar, valem para quaisquer sistemas: sólidos, líquidos ou gasosos; no entanto, iremos aplicá-las apenas nos casos *mais simples*, ou seja, no caso em que o sistema estudado é um *gás ideal*. Portanto, antes de estudarmos essas leis, vamos primeiramente comentar alguns fatos relacionados ao comportamento dos gases ideais.
+
+== Energia interna, trabalho e calor
+
+No estudo da *Termodinâmica dos Gases Ideais*, são parâmetros básicos as grandezas físicas: *energia interna ($U$)*, *trabalho ($\tau$)* e a *quantidade de calor ($Q$)*.
+
+Veremos, logo a seguir, como funciona cada uma destes três parâmetros.
+
+=== Energia interna
+
+*A energia interna de um sistema é o somatório de vários tipos de energia existentes em suas partículas*. Como vimos, no caso de uma gás perfeito (*monoatômico*) a energia interna se resume na *energia de translação de suas partículas* e, seu cálculo é o seguinte:
+
+\begin{equation}\label{eq:energiainterna}
+    U=\dfrac{3}{2}nRT
+\end{equation}
+
+Ou seja, a anergia interna depende apenas da temperatura (*$T$*) do sistema e varia de forma *linear* (pois é uma função de 1° grau).
+
+Para uma transformação termodinâmica de uma gás monoatômico de $A\Rightarrow B$, temos que:
+
+\begin{equation*}
+    \Delta U = \dfrac{3}{2}nR\Delta T
+\end{equation*}
+
+Onde $\Delta T = T_{B}-T_{A}$.
+
+Portanto:
+
+- *$T$* aumenta $\Rightarrow$ *$\Delta U > 0$*: a energia interna do gás aumenta.
+- *$T$* diminui $\Rightarrow$ *$\Delta U < 0$*: a energia interna do gás diminui.
+- *$T$* constante $\Rightarrow$ *$\Delta U = 0$*: a energia interna do gás não é alterada.
+
+*Observação*: se o gás não for monoatômico, outras formas de energia devem ser levadas em conta como, por exemplo, a energia cinética de rotação das moléculas. Nestas condições, teremos: 
+
+\begin{equation*}
+    U > \dfrac{3}{2}nRT
+\end{equation*}
+
+Por fim, se relacionarmos a equação da energia interna com a Lei de Clapeyron ($PV = nRT$), encontraremos:
+
+\begin{equation}
+    U = \dfrac{3}{2}pV\\
+\end{equation}
+
+=== Trabalho
+
+De acordo como o que já foi estudado em *Mecânica*, sabemos que todo *trabalho* é realizado por uma *força*. Vamos então considerar a *expansão* de um *gás perfeito* submetido a uma pressão constante (*transformação isobárica*).
+
+image::img2.png[title="Trabalho de um gás. Fonte: osfundamentosdafisica", align="center"]
+
+\begin{align*}
+    \tau &= Fd \\
+    \tau &= pAd
+\end{align*}
+
+Mas, $Ad=\Delta V$ (variação de volume). Portanto:
+
+\begin{equation}\label{eq:trabalho}
+    \tau = p\Delta V
+\end{equation}
+
+Analisando o diagrama $p\times V$:
+
+image::img3.png[title="Diagrama I. Fonte: osfundamentosdafisica", align="center"]
+
+A área (*$A$*) do retângulo do diagrama acima é numericamente igual ao trabalho (*$\tau$*). De fato podemos perceber isto:
+
+\begin{align*}
+    \text{Área} &= \text{base} \times \text{altura} \\
+    A &= bh \\
+    A &= p\Delta V
+\end{align*}
+
+Sendo assim, podemos concluir que, em uma *transformação isobárica*, de fato, *o trabalho realizado é numericamente igual a área abaixo da curva*.
+
+Isso não é um fato exclusivo para este tipo de transformação. É possível fazer uma generalização para quaisquer tipo de transformação utilizando ferramentas de matemática superior, mas acredite, *vale para qualquer tipo de transformação*.
+
+Para analisar o trabalho de uma transformação, podemos adotar o seguinte:
+
+- *$V$* aumenta $\Rightarrow$ *$\tau > 0$*: o gás *realiza* trabalho.
+- *$V$* diminui $\Rightarrow$ *$\tau < 0$*: o gás *recebe* trabalho.
+- *$V$* constante $\Rightarrow$ *$\tau = 0$*: o gás *não realiza* trabalho.
+
+*Exercício Resolvido {counter:exeres}*
+
+Um gás sofre uma transformação *$A\Rightarrow B$* conforme indica o diagrama *$p\times V$*. Calcule o trabalho que o gás troca com o meio exterior.
+
+image::img4.1.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+[click.resposta]
+--
+O trabalho pode ser calculado como numericamente igual a área abaixo da curva (neste caso, um trapézio).
+
+\begin{align*}
+    A &= \dfrac{(B+b)h}{2}\\
+    A &= \dfrac{(3\times 10^{5}+2\times 10^{5})(0,3-0,1)}{2}\\
+    A &= \dfrac{(5\times 10^{5})(0,2)}{2}\\
+    A &= 5\times 10^{4}\;J
+\end{align*}
+
+Sendo assim, $\boxed{\tau = 5\times 10^{4}\;J}$
+
+Perceba que o sinal *deve ser positivo*, pois o gás *realiza trabalho* (o volume do gás aumenta). $\blacksquare$
+--
+
+Caso o gás percorra um ciclo (*transformação cíclica*), isto é, o estado final coincide com o inicial, o trabalho trocado com o sistema é *numericamente igual a área do ciclo*.
+
+\begin{equation*}
+    \tau \stackrel{N}{=} A
+\end{equation*}
+
+image::img5.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+Podemos perceber que na transformação *$A\Rightarrow B$* o gás *realiza* trabalho e em *$C\Rightarrow D$*, *recebe*. O trabalho realizado é, em módulo, maior do que o recebido. Logo, *quando o ciclo é percorrido no sentido horário o gás realiza trabalho sobre o meio exterior*. Analogamente, *quando o ciclo é percorrido no sentido anti-horário o gás recebe trabalho do meio exterior*.
+
+image::img6.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+*Exercício Resolvido {counter:exeres}*
+
+Um gás sofre ume transformação cíclica $ABCDA$, conforme indicado no diagrama $p\times V$.
+
+image::img7.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+a) Sendo $T_{A} = 300\;K$ a temperatura no estado representado pelo ponto $A$, determine as temperaturas em $B$, $C$ e $D$. +
+b) Calcule o trabalho que o gás troca com o meio exterior ao percorrer o ciclo. Neste ciclo o gás realiza ou recebe trabalho do meio exterior?
+
+[click.resposta]
+--
+a) $A\Rightarrow B$: *transformação isobárica*:
+
+\begin{align*}
+    \frac{V_{A}}{T_{A}} &= \dfrac{V_{B}}{T_{B}} \\
+    T_{B} &= T_{A}\left(\dfrac{V_{B}}{V_{A}}\right) \\
+    T_{B} &= 300\left(\dfrac{0,3}{0,1}\right) \\
+    T_{B} &= 900
+\end{align*}
+
+Ou seja, $\boxed{T_{B} = 900\;K}$ +
+
+$B\Rightarrow C$: *transformação isocórica*:
+
+\begin{align*}
+    \frac{P_{B}}{T_{B}} &= \dfrac{P_{C}}{T_{C}} \\
+    T_{C} &= T_{B}\left(\dfrac{P_{C}}{P_{B}}\right) \\
+    T_{C} &= 900\left(\dfrac{2\times 10^{5}}{6\times 10^{5}}\right) \\
+    T_{C} &= 300
+\end{align*}
+
+Ou seja, $\boxed{T_{C} = 300\;K}$ +
+
+$C\Rightarrow D$: *transformação isobárica*:
+\begin{align*}
+    \frac{V_{C}}{T_{C}} &= \dfrac{V_{D}}{T_{D}} \\
+    T_{D} &= T_{C}\left(\dfrac{V_{D}}{V_{C}}\right) \\
+    T_{D} &= 300\left(\dfrac{0,1}{0,3}\right) \\
+    T_{D} &= 100
+\end{align*}
+
+Ou seja, $\boxed{T_{D} = 100\;K}$ +
+
+b) Aqui podemos utilizar a relação que o trabalho é numericamente igual a área do ciclo.
+
+\begin{align*}
+    A &= bh \\
+    A &= (0,3-0,1)(6\times 10^{5}-2\times 10^{5}) \\
+    A &= (0,2)(4\times 10^{5}) \\
+    A &= 8\times 10^{4}
+\end{align*}
+
+Ou seja, $\boxed{\tau = 8\times 10^{4}\;J}$
+
+Perceba que o sinal do trabalho deve ser *positivo*, pois o ciclo é percorrido no *sentido horário* (o gás *realiza* trabalho). $\blacksquare$
+--
+
+=== Calor
+
+Já estudamos que o calor é a energia térmica transitando de um sistema para outro. Assim, um dos sistemas cede essa energia e o outro, a recebe. Por convenção, *o calor recebido é positivo e o calor cedido, negativo*.
+
+== Lei Zero da Termodinâmica
+
+Como também já estudamos, A *Lei Zero da Termodinâmica trabalha o conceito de equilíbrio térmico*. Essa lei diz que dois sistemas físicos estão em equilíbrio se, ao serem colocados em contato térmico, não há fluxo de calor entre eles. Sendo assim, se dois sistemas físicos, *A* e *B*, estão individualmente em equilíbrio térmico com um terceiro sistema *C*, então ambos estarão em equilíbrio térmico entre si (se $T_{a}=T_{c}$ e $T_{b}=T_{c}$, então $T_{a}=T_{b}$).
+
+== Primeira Lei da Termodinâmica
+
+A *1ª Lei da Termodinâmica* é a aplicação do *Princípio  da Conservação  da Energia*. Com a aplicação desta Lei, podemos, por meio de uma "contagem" energética, saber o que ocorrer um sistema gasoso ao sobre uma transformação termodinâmica.
+
+Imagine que um gás receba uma quantidade de calor igual $Q = 100\;J$. Vamos supor que o gás se expanda e realize um trabalho $\tau = 80\;J$. Os $20\;J$ restantes ficam armazenados no gás, aumentando sua energia interna ($\Delta U=20\;J$). As três formas de energia, $Q$,  $\tau$  e $\Delta U$ relacionam-se, constituindo a primeira lei da Termodinâmica:
+
+*Para todo sistema termodinâmico existe uma função característica denominada energia interna. A variação dessa energia interna ($\Delta U$) entre dois estados quaisquer pode ser determinada  pela diferença entre a quantidade de calor ($Q$) e o trabalho ($\tau$) trocados com o meio externo.*
+
+Matematicamente,
+
+\begin{equation}
+    \Delta U=Q-\tau
+\end{equation}
+
+=== Transformação Isotérmica
+
+Nas *transformações isotérmicas*, a temperatura do sistema se matem constante e, consequentemente, *a variação de energia interna é nula ($\Delta u=0$)*.
+
+image::img8.jpg[title="Transformação isotérmica. Fonte: wikimedia", align="center"]
+
+Aplicando a 1º Lei da Termodinâmica neste tipo de transformação, temos:
+
+\begin{align*}
+    \Delta U &= Q - \tau\\
+    0 &= Q - \tau\\
+    \tau &= Q 
+\end{align*}
+
+Isto significa que *o calor e o trabalho trocado com o meio externo são iguais*. Esse fato indica duas possibilidades.
+
+1. Se o sistema gasoso recebe calor ($Q>0$), essa energia é integralmente utilizada na realização de trabalho ($\tau>0$).
+2. Se o sistema gasoso recebe trabalho ($\tau<0$), ele cede para o meio externo igual quantidade de energia em forma de calor ($Q<0$).
+
+=== Transformação Isocórica
+
+Nas *transformações isocóricas* (também conhecidas como isométricas ou isovolumétricas), o gás matém-se constante, consequentemente, *o sistema não troca trabalho com o meio externo ($\tau=0$)*. Portanto, o gás nem recebe e nem realiza trabalho.
+
+image::img9.png[title="Transformação isocórica. Fonte: wikimedia", align="center"]
+
+Aplicando a 1º Lei da Termodinâmica neste tipo de transformação, temos:
+
+\begin{align*}
+    \Delta U &= Q - \tau\\
+    \Delta U &= Q - 0\\
+    \Delta U &= Q 
+\end{align*}
+
+Isto significa que *a variação de energia interna sofrida pelo sistema gasoso é igual ao calor trocado com o meio externo*. Sendo assim, temos que considerar duas situações:
+
+1. Se sistema recebe calor ($Q>0$), sua energia interna aumenta ($\Delta U>0$) em igual valor.
+2. Se o sistema cede calor ($Q>0$), sua energia interna diminui em ($\Delta U<0$) em igual valor.
+
+=== Transformação Isobárica
+
+Nas *transformações isobáricas, a pressão do sistema gasosos se mantém constante*. 
+
+image::img10.png[title="Transformação isobárica. Fonte: wikimedia", align="center"]
+
+Dessa forma, a analise do que ocorre é realizada pela de Equação de *Clapeyron*:
+
+\begin{equation}
+    pV=nRT
+\end{equation}
+
+Percebemos que, como a pressão é constante, o volume do gás varia em função da temperatura, ou seja, uma variação de volume ($\Delta V$) produz uma variação de temperatura ($\Delta T$). Neste processo de variação de volume, a aplicação da Equação de Clapeyron ficará da seguinte forma:
+
+\begin{equation*}
+    p\Delta V=nR\Delta T
+\end{equation*}
+
+Nesta transformação, temos que considerar duas situações:
+
+1. Quando a temperatura absoluta do sistema aumenta, seu volume também aumenta. Isso significa que sua energia interna aumenta ($\Delta U>0$) e o sistema realiza trabalho ($\tau>0$). Evidentemente, toda a energia entre no sistema na forma de calor.
+2. Quando a temperatura absoluta do sistema diminui, seu volume também diminui. Isso significa que sua energia interna diminui ($\Delta U<0$) e o sistema recebe trabalho ($\tau<0$). Evidentemente, toda a energia sai do sistema na forma de calor.
+
+Como estudamos no início, o trabalho realizado por um sistema gasoso a uma pressão constante é dada por:
+
+\begin{equation*}
+    \tau = p\Delta V
+\end{equation*}
+
+Usando a Equação de Clapeyron:
+
+\begin{equation*}
+    \tau = nR\Delta T
+\end{equation*}
+
+=== Transformação Adiabática
+
+Nas *transformações adiabáticas, não há troca de calor entre o sistema e o meio externo*. Portanto, toda a energia recebida ou cedida pelo sistema ocorre por meio do trabalho.
+
+image::img11.jpg[title="Transformação adiabática. Fonte: wikimedia", align="center"]
+
+Aplicando a 1º Lei da Termodinâmica neste tipo de transformação, temos:
+
+\begin{align*}
+    \Delta U &= Q - \tau\\
+    \Delta U &= 0 - \tau\\
+    \Delta U &= -\tau 
+\end{align*}
+
+Isto significa quo o módulo da variação de energia interna sofrida pelo sistema é igual ao módulo do trabalho que o sistema troca com o meio externo. Assim, temos duas situações a considerar:
+
+1. Quando o sistema recebe trabalho ($\tau<0$), sua energia interna aumenta ($\Delta U>0$) em igual valor.
+2. Quando o sistema realiza trabalho ($\tau>0$), ele o faz retirando energia da sua própria energia interna, que diminui ($\Delta U<0$).
+
+*Exercício Resolvido {counter:exeres}*
+
+*(IFG)* As máquinas térmicas são dispositivos que operam sempre em ciclos, isto é, retornam periodicamente às condições iniciais. Uma maneira de estudá-las é por meio de transformações que ocorrem dentro destes ciclos, representados por um gráfico do comportamento da pressão de um gás de trabalho em função do volume por ele ocupado. 
+
+O gráfico a seguir representa um ciclo de uma máquina térmica realizado por um sistema gasoso:
+
+image::img16.jpg[title="Diagrama. Fonte: todamateria", align="center"]
+
+Analise as afirmativas.
+
+I - De A para B ocorre uma expansão isobárica. +
+II -  De B para C o trabalho é motor, ou seja, realizado pelo sistema. +
+III - A variação de energia interna no ciclo ABCDA é positiva. +
+IV - No ciclo fechado, ABCDA, não há variação de energia interna e o trabalho total é nulo.
+
+Está(ão) correta(s).
+
+a) Apenas a afirmativa I. +
+b) Apenas as afirmativas I e II. +
+c) Apenas as afirmativas I e IV. +
+d) Apenas as afirmativas I, II e III. +
+e) Apenas as afirmativas I, II e IV. 
+
+[click.resposta]
+--
+I - *Verdadeiro*. A pressão (representada pelo eixo x) permaneceu constante, caracterizando assim, uma transformação isobárica, enquanto o volume aumentou. +
+II - *Falso*. Como o volume não varia de B para C, então o trabalho é nula, já que $\tau = p\Delta V$. +
+III - *Falso*. A variação de energia é nula, pois ao término do ciclo, retorna-se às condições iniciais. +
+IV - *Falso*. O trabalho realizado não é nulo e pode ser calculado como a área do retângulo formada pelo ciclo. +
+*Gabarito*: a. $\blacksquare$
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+Numa transformação isobárica, $2\;mols$ de um gás perfeito monoatômico recebem uma certa quantidade de calor e consequentemente sua temperatura varia de $300\;K$ a $400\;K$. Determine: +
+a) o trabalho que o gás troca com o meio exterior; +
+b) a correspondente variação de energia interna; +
+c) a quantidade de calor recebida +
+Dado: $R=8,31\;J/(mol\cdot K)$ 
+
+[click.resposta]
+--
+a) Primeiramente, vamos calcular o trabalho: 
+\begin{align*}
+    \tau &= p\Delta V \\
+    \tau &= nR\Delta T \\
+    \tau &= 2\cdot 8,31\cdot (400-300) \\
+    \tau &= 1662
+\end{align*}
+
+Ou seja, o gás troca com o meio externo um valor de $\boxed{\tau = 1662\;J}$ +
+
+b) Agora, a variação de energia interna:
+\begin{align*}
+    \Delta U &= \dfrac{3}{2}nR\Delta T \\
+    \Delta U &= \dfrac{3}{2}\cdot 2\cdot 8,31\cdot (400-300)  \\
+    \Delta U &= 2493 
+\end{align*}
+
+Ou seja, nestas condições $\boxed{\Delta U = 2493\;J}$ +
+
+c) Utilizando a 1° Lei da Termodinâmica
+\begin{align*}
+    \Delta U &= Q - \tau \\
+    Q &= \Delta U + \tau \\
+    Q &= 1662 + 2493 \\
+    Q &= 4155 
+\end{align*}
+
+Portanto, $\boxed{Q = 4155\;J}$ $\blacksquare$
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+*(UFLA-MG)* O diagrama $p \times V$ da figura mostra uma transformação sofrida por $0,4\;mol$ de um gás monoatômico ideal.
+
+image::img12.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+Considerando $T_{A}=300\;K$ e $T_{B}=900\;K$, a quantidade de calor envolvida na transformação será (considere $1\;cal = 4\;J$ e $R = 2\;cal/(mol\cdot K)$):
+
+a) $220\;cal$ +
+b) $-1220\;cal$ +
+c) $2500\;cal$ +
+d) $-2500\;cal$ +
+e) $1220\;cal$
+
+[click.resposta]
+--
+A área no diagrama $p\times V$ fornece o trabalho. No caso o gás realiza trabalho pois o volume aumenta:
+\begin{align*}
+    \tau &= \text{Área} \\
+    \tau &= (3-1)\times 10^{-3}\cdot 1\times 10^{6} \\
+    \tau &= 2\times 10^{3}
+\end{align*}
+
+Daí o trabalho realizado é igual a $2\times 10^{3}\;J$ +
+
+A variação de energia interna é dada por:
+\begin{align*}
+    \Delta U &= \dfrac{3}{2}nRT \\
+    \Delta U &= \dfrac{3}{2}\cdot 0,4\cdot 2\cdot 4\cdot (900-300) \\
+    \Delta U &= 2880
+\end{align*}
+
+Daí a energia interna é igual a $2880\;J$ +
+
+Por fim, utilizando a 1ª Lei da Termodinâmica:
+\begin{align*}
+    \Delta U &= Q - \tau \\
+    Q &= \Delta U + \tau \\
+    Q &= 2880 + 2000 \\
+    Q &= 4880
+\end{align*}
+
+Ou seja, o quantidade envolvida nesta transformação foi de $4880\;J$, ou passando para calorias $\boxed{Q=1220\;cal}$ +
+*Gabarito*: e. $\blacksquare$
+--
+
+== Segunda Lei da Termodinâmica
+
+Para servir como motivação e estudar os conceitos da *2ª Lei da termodinâmica*, vamos analisar o seguinte exemplo de um gás sofrendo uma expansão isotérmica $A \Rightarrow B$, como apresentado na figura.
+
+image::img13.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+Nesta transformação, a variação de energia interna é nula ($\Delta U=0$).
+
+O gás realiza trabalho ($\tau$) às custas da quantidade de calor ($Q$) recebida. De fato, de acordo com 1ª Lei da Termodinâmica, poder ser sim razoável pensar nesta transformação integral de calor em trabalho, *mas isso jamais ocorrerá por causas das condições impostas pela 2ª Lei da Termodinâmica*.
+
+=== Máquinas Térmicas
+
+São denominadas máquinas térmicas os dispositivos usados para converter energia térmica em energia mecânica. Ou seja,
+são *dispositivos que efetuam a conversão de calor em trabalho*.
+
+Esquematicamente:
+
+image::img14.png[title="Esquema de uma máquina térmica. Fonte: osfundamentosdafisica", align="center"]
+
+O *rendimento ($\eta$)* de uma máquina térmica, pode ser calculado como a *razão entre a energia útil obtida em cada ciclo (o trabalho) e a energia total fornecida pela fonte quente (quantidade calor $Q_{1}$)*. Assim:
+
+\begin{equation*}
+    \eta = \dfrac{\tau}{|Q_{1}|} 
+\end{equation*}
+
+O módulo deve-se ao fato de ser apenas computado os valores positivos da quantidade de calor.
+
+Sendo: $\tau = |Q_{1}| - |Q_{2}|$
+
+\begin{align*}
+    \eta &= \dfrac{|Q_{1}|-|Q_{2}|}{|Q_{1}|} \\
+    \eta &= 1 - \dfrac{|Q_{2}|}{|Q_{1}|}
+\end{align*}
+
+Ou seja, o rendimento de uma máquina térmica poder calculado como: 
+
+\begin{equation}
+    \eta = 1 - \dfrac{|Q_{2}|}{|Q_{1}|}
+\end{equation}
+
+É importante ressaltar que, para obter um *rendimento de $100\%$*, a fonte de calor $Q_{2}$ tem que ser *nula*, na prática isto é *impossível*, por causa desta impossibilidade, surgiu o enunciado de *Kelvin-Planck* para a 2ª Lei da Termodinâmica:
+
+*É impossível construir uma máquina que, operando em transformações cíclicas, tenha como único efeito transformar completamente em trabalho a energia térmica recebida de uma fonte quente.*
+
+O fato do calor fluir da fonte quente para a fonte fria, levou *Clausius* a enuncia a 2ª Lei da Termodinâmica da seguinte forma:
+
+*É impossível uma máquina, sem ajuda de um agente externo, conduzir calor de um sistema para outro que esteja a uma temperatura maior.*
+
+A consequência do enunciado de Clausius é que *o calor só pode passar de um sistema de menor temperatura para outro de maior temperatura se um agente externo realizar um trabalho sobre esse sistema*, como no caso das *máquinas frigoríficas*.
+
+Um bom *refrigerador* (ou condicionador de ar) é aquele que *retira o máximo de calor da fonte fria ($Q_{2}$) para um mesmo trabalho ($\tau$) realizado pelo motor*. Portanto, quanto mais eficiente for o refrigerador, maior será esta razão. Matematicamente, podemos calcular a eficiência de um refrigerador da seguinte forma:
+
+\begin{equation}
+    \eta = \dfrac{Q_{2}}{\tau}
+\end{equation}
+
+=== Ciclo de Carnot
+
+Até 1824, acreditava-se que uma máquina térmica poderia atingir um rendimento total ($100\%$) ou algo próximo desse valor. Coube ao jovem *Carnot* demonstrar a impossibilidade desse rendimento.
+
+Ele propôs uma máquina térmica teórica, ideal, que funcionava percorrendo um ciclo particular, denominado *ciclo de Carnot*. Esse dispositivo obedece a dois postulados, são eles:
+
+1. Nenhuma máquina operando entre duas temperaturas fixadas pode ter um rendimento maior que a máquina ideal de Carnot, operando entre essas mesmas temperaturas.
+2. Ao operar entre duas temperatura, a máquina ideal de Carnot tem o mesmo rendimento, qualquer que seja o fluido operante.
+
+O ciclo de Carnot é constituído por duas transformações isotérmicas nas temperaturas $T_{1}$ e $T_{2}$, respectivamente das fontes quente e fria, alternadas com duas transformações adiabáticas.
+
+image::img15.png[title="Ciclo de Carnot. Fonte: osfundamentosdafisica", align="center"]
+
+*$A\Rightarrow B$*: expansão isotérmica à temperatura $T_{1}$ (fonte quente). Nesta transformação o gás recebe a quantidade de calor $Q_{1}$. 
+
+*$B\Rightarrow C$*: é a expansão adiabática, na qual a temperatura diminui para $T_{2}$.  
+ 
+*$C\Rightarrow D$*: compressão isotérmica à temperatura $T_{2}$ (fonte fria). Nesta transformação o gás cede a quantidade de calor $Q_{2}$. 
+
+*$D\Rightarrow A$*: compressão adiabática na qual a temperatura aumenta para $T_{1}$.
+
+O trabalho obtido por ciclo corresponde à área interna dele.
+
+No ciclo de Carnot, vale a seguinte relação: 
+
+\begin{equation}
+\dfrac{|Q_{2}|}{|Q_{1}|} = \dfrac{T_{2}}{T_{1}} 
+\end{equation}
+
+Assim, o rendimento de uma máquina térmica operando com o ciclo de Carnot é dado por:
+
+\begin{equation}
+\eta = 1- \dfrac{T_{2}}{T_{1}} 
+\end{equation}
+
+Analisando a relação acima, podemos concluir que:
+
+O *zero absoluto* seria a temperatura da fonte fria de uma máquina ideal de Carnot, que operasse com rendimento de *$100\%$*.
+
+=== Entropia
+
+Em 1865, Clausius introduziu o conceito de *entropia* para medir a *desordem de um sistema*. Ele percebeu que se as Leis da Natureza puderem atuar, sem interferências, em um sistema, o mais provável é que os integrantes desse sistema tem a uma disposição desordenada, e o natural é que *essa desordem do sistema aumente*.
+
+Senso assim, uma nova maneira de enunciarmos a 2ª Lei da termodinâmica seria: 
+
+*Como a entropia é uma medida da desordem e os sistemas físicos tendem para estados cada vez mais desordenados, podemos inferir que, em processos naturais (sujeitos apenas às Leis da Natureza), a entropia do Universo vem aumentando ao longo do tempo*.
+
+Outra informação importante proveniente desta interpretação é que em *a entropia total de um sistema isolado nunca diminui, somente aumenta ou fica constante*. Acontece que, a entropia somente fica *constante em processos reversíveis* (aquela em que, após seu término, o sistema pode retornar às suas condições iniciais pelo mesmo caminho), que na realidade são *ideais*. Na prática, nenhuma transformação é totalmente reversível.
+
+Clausius definiu que a variação de entropia ($\Delta S$) de um sistema, quando se agrega a uma quantidade de calor ($Q$), mediante um processo reversível à temperatura constante ($T$), é dada por:
+
+\begin{equation}
+    \Delta S = \dfrac{Q}{T}
+\end{equation}
+
+Sendo assim, podemos concluir que:
+
+1. Se um sistema recebe calor $Q>0$, sua entropia aumenta ($\Delta S>0$).
+2. Se um sistema libera calor $Q<0$, sua entropia diminui ($\Delta S<0$).
+3. Se um sistema não troca calor com o meio externo (transformação adiabática) $Q=0$, a entropia do sistema não varia ($\Delta S=0$).
+
+Exemplos:
+
+- *Copo de vidro quebrando*: o processo de quebra do vidro em pedaços menores é espontâneo, ou seja, é esperado que ocorra quando cai no chão. Dizemos que a entropia, a desordem, desse sistema aumentou. Já o oposto, que o copo volte à altura anterior intacto naturalmente, não é esperado.
+- *Perfume difundido no ar*: quando abrimos um frasco de perfume, espera-se que o cheiro seja difundido pelo ambiente, pois as moléculas evaporaram no ar, aumentando a entropia do sistema. Não esperamos o oposto, no entanto, que o perfume difundido no ar volte ao frasco quando o abrimos. Ou seja, não seria espontâneo;
+- *Gelo derretendo*: quando o cubo muda do estado sólido para o líquido sua desordem aumenta, ou seja, aumenta a entropia do sistema. Neste processo, as moléculas se agitam e ficam mais distantes umas das outras, formando um sistema mais desordenado.
+
+*Exercício Resolvido {counter:exeres}*
+
+Considere uma máquina térmica teórica funcionando segundo o ciclo de Carnot entre as temperaturas de $327\;°C$ e $127\;°C$, apresentando um trabalho útil de $800\;J$ por ciclo. Determine, para essa máquina teórica: +
+a) o rendimento. +
+b) a quantidade de calor que, em cada ciclo é retirada da fonte quente. +
+c) a quantidade de calor rejeitada por ciclo para a fonte fria.
+
+[click.resposta]
+--
+a) Primeiramente, vamos transformar as temperaturas fornecidas na escala Celsius para a escala absoluta Kelvin:
+
+\begin{align*}
+T_{1} &= 273+327\\
+T_{1} &= 600
+\end{align*}
+
+\begin{align*}
+T_{2} &= 273+127\\
+T_{2} &= 400
+\end{align*}
+
+Agora, calculando a rendimento da máquina funcionando segundo o ciclo de Carnot:
+
+\begin{align*}
+\eta &= 1-\dfrac{T_{2}}{T_{1}}\\
+\eta &= 1-\dfrac{400}{600}\\
+\eta &= 1-\dfrac{2}{3}\\
+\eta &= \dfrac{1}{3}\\
+\eta &= 0,33
+\end{align*}
+
+Sendo assim, o rendimento foi de $\boxed{33\%}$ +
+
+b) Para calcular a quantidade de calor retirada pela fonte quente, vamos utilizar a fórmula do rendimento de uma máquina térmica:
+
+\begin{align*}
+\eta &= \dfrac{\tau}{Q_{1}} \\
+Q_{1} &= \dfrac{\tau}{\eta} \\
+Q_{1} &= \dfrac{800}{\dfrac{1}{3}} \\
+Q_{1} &= 800 \cdot 3 \\
+Q_{1} &= 2400
+\end{align*}
+
+Sendo assim, a quantidade de calor retirada da fonte quente foi de $\boxed{2400\;J}$ +
+
+c) Por fim, para calcular a quantidade de calor rejeitada para a fonte fria, vamos utilizar o princípio da conservação da energia.
+
+\begin{align*}
+Q_{1} &= \tau + Q_{2} \\
+Q_{2} &= Q_{1}-\tau \\
+Q_{2} &= 2400-800\\
+Q_{2} &= 1600
+\end{align*}
+
+Sendo assim, a quantidade de calor rejeitada para a fonte fria foi de $\boxed{1600\;J}$ $\blacksquare$
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+É possível construir uma máquina térmica, operando entre as temperaturas de $400\;K$ e $300\;K$, que forneça $800\;J$ de trabalho útil, retirando $2000\;J$ da fonte quente?
+
+[click.resposta]
+--
+O rendimento da máquina seria:
+
+\begin{align*}
+    \eta &= \dfrac{\tau}{Q_{1}} \\
+    \eta &= \dfrac{800}{2000} \\
+    \eta &= 0,40 \\
+    \eta &= 40\%
+\end{align*}
+
+Agora, o rendimento se a máquina operasse segundo o ciclo de Carnot:
+
+\begin{align*}
+    \eta &= 1 - \dfrac{T_{2}}{T_{1}} \\
+    \eta &= 1 - \dfrac{300}{400} \\
+    \eta &= 1 - \dfrac{3}{4} \\
+    \eta &= 0,25 \\
+    \eta &= 25\%
+\end{align*}
+
+Como sabemos, o *máximo rendimento teoricamente possível de uma máquina térmica* funcionando entre duas temperaturas $T_{1}$ e $T_{2}$, das fontes quente e fria, é quando opera segundo o *ciclo de Carnot*. Portanto, podemos concluir que *não é possível* construir a máquina térmica descrita. $\blacksquare$
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+*(Puc MG)* - Qual dos seguintes estados é o mais desordenado?
+
+a) gás próximo à temperatura de condensação. +
+b) líquido próximo ao ponto de ebulição. +
+c) sólido próximo ao ponto de fusão. +
+d) líquido próximo ao ponto de congelação.
+
+[click.resposta]
+--
+Em relação aos estados da natureza temos, em geral, o seguinte:
+
+\begin{equation*}
+    \Delta S_{\text{gasoso}}>\Delta S_{\text{líquido}}>\Delta S_{\text{sólido}}
+\end{equation*}
+
+Ou seja, *os gases* são mais desordenados do que que um líquido ou um sólido. Portanto, apresentam *maior entropia*.
+
+*Gabarito*: a. $\blacksquare$
+--
+
+== Exercícios de Revisão
+
+*{counter:exerev}*. Um gás monoatômico e ideal com volume de $3\;m^{2}$ é colocado sobre uma pressão de $10^{6}$ pascal. A energia interna desse gás, em joules, é igual a:
+
+a) $3,0\times 10^{6}\;J$ +
+b) $1,5\times 10^{6}\;J$ +
+c) $5,0\times 10^{6}\;J$ +
+d) $10,0\times 10^{5}\;J$ +
+e) $35\times 10^{5}\;J$
+
+[click.resposta]
+--
+*b*
+--
+
+*{counter:exerev}*. *(UNIRIO-RJ)* O gráfico mostra uma transformação *ABC* sofrida por certa massa de gás ideal (ou perfeito), partindo da temperatura inicial $300\;K$.
+
+image::img17.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+Determine:
+
+a) a temperatura do gás no estado *C*. +
+b) o trabalho realizado pelo gás na transformação *AB*.
+
+[click.resposta]
+--
+a) $275\;K$. +
+b) $100\;J$.
+--
+
+*{counter:exerev}*. *(PUC-SP)* O diagrama representa uma transformação cíclica de um gás perfeito.
+
+image::img18.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+Uma máquina opera segundo este ciclo à taxa de $50$ ciclos por minuto. A potência dessa máquina será igual a:
+
+a) $1\times 10^{4}\;W$ +
+b) $5\times 10^{4}\;W$ +
+c) $1\times 10^{3}\;W$ +
+d) $5\times 10^{5}\;W$ +
+e) $5\times 10^{2}\;W$ 
+
+[click.resposta]
+--
+*e*.
+--
+
+*{counter:exerev}*. *(UF Santa Maria-RS)* Um gás ideal sofre uma transformação: absorve $50\;cal$ de energia na forma de calor e expande-se realizando um trabalho de $300\;J$. Considerando $1\;cal = 4,2\;J$, a variação da energia interna do gás é, em J, de:
+
+a) $250$ +
+b) $–250$ +
+c) $510$ +
+d) $–90$ +
+e) $90$
+
+[click.resposta]
+--
+*d*
+--
+
+*{counter:exerev}*. *(URCA)* Uma máquina térmica utiliza um gás ideal para realizar o ciclo mostrado na figura.
+
+image::img19.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+Determine, respectivamente, o trabalho realizado e o calor recebido pelo gás em um ciclo.
+
+a) $1600\;J$ e $–800\;J$. +
+b) $800\;J$ e $1600\;J$. +
+c) $800\;J$ e $800\;J$. +
+d) $1600\;J$ e $–1600\;J$. +
+e) $1500\;J$ e $–1500\;J$.
+
+[click.resposta]
+--
+*c*
+--
+
+*{counter:exerev}*. *(UECE)* O gráfico abaixo mostra como varia, em função da temperatura absoluta, a energia interna ($U$) de $1\;mol$ de um gás ideal, de massa molar $4\;g/mol$, mantido a volume constante:
+
+image::img20.png[title="Diagrama. Fonte: osfundamentosdafisica", align="center"]
+
+No intervalo mostrado, os valores do trabalho realizado pelo gás nesta transformação, da quantidade de calor que o gás absorveu e do calor especifico (a volume constante), em $cal/(g°C)$ do gás são, respectivamente:
+
+a) $0,\;400,\;4$ +
+b) $0,\;400,\;1$ +
+c) $400,\;0,\;4$ +
+d) $-400,\;400,\;1$
+
+[click.resposta]
+--
+*b*
+--
+
+*{counter:exerev}*. *(URCA)* O ciclo de Carnot apresenta o máximo rendimento para uma máquina térmica operando entre duas temperaturas. Sobre ele podemos afirmar:
+
+I – É formado por duas transformações adiabáticas alternadas com duas transformações isotérmicas, todas reversíveis; +
+II – A área do ciclo de Carnot é numericamente igual ao trabalho realizado no ciclo; +
+III – As quantidades de calor trocados com as fontes quente e fria são inversamente proporcionais às respectivas temperaturas absolutas das fontes.
+
+Assinale a opção que indica o(s) item(ns) correto(s):
+
+a) I, II e III. +
+b) Somente I e III. +
+c) Somente II e III. +
+d) Somente I. +
+e) Somente I e II.
+
+[click.resposta]
+--
+*e*
+--
+
+*{counter:exerev}*. Uma máquina térmica recebe da fonte quente, em cada ciclo, uma quantidade de calor de $2000\;J$. Sabendo-se que o rendimento da máquina é de $10\%$, determine:
+
+a) o trabalho que a máquina realiza em cada ciclo. +
+b) a quantidade de calor rejeitada para a fonte fria.
+
+[click.resposta]
+--
+a) $200\;J$. +
+b) $1800\;J$.
+--
+
+*{counter:exerev}*. *(UFLA-MG)* Uma empresa propõe construir um motor térmico projetado para operar entre dois reservatórios de calor, sendo o quente à temperatura $T_{1} = 1600\;K$ e o frio a $T_{2} = 400\;K$. O projeto prevê, para o motor, uma potência de $4\;cv$, com absorção de $1480\;cal/s$ do reservatório quente. +
+Dados: +
+$1\;cv = 740\;W$. +
+$1\;cal = 4\;J$.
+
+a) Calcule o rendimento do referido motor. +
+b) Calcule o rendimento de um motor de Carnot, operando entre os mesmos reservatórios de calor. +
+c) O motor proposto é viável teoricamente? Justifique sua resposta.
+
+[click.resposta]
+--
+a) $50\%$. +
+b) $75\%$. +
+c) Sim, é viável.
+--
+
+*{counter:exerev}*. *(UFOP MG/2008)* Com relação à entropia e à segunda lei da termodinâmica, é incorreto afirmar:
+
+a)	Ciclo termodinâmico é um processo em que uma máquina térmica ou um sistema termodinâmico volta a seu estado inicial. +
+b)	Não existe máquina térmica que transforme todo calor de uma fonte em trabalho. +
+c)	A diluição de uma gota de tinta em um copo de água é um exemplo de processo reversível. +
+d)	Em todo processo isolado irreversível, a entropia total do sistema sempre aumenta.
+
+[click.resposta]
+--
+*c*
+--
+
+== Referências
+
+CALÇADA, Caio Sérgio; SAMPAIO, José Luiz. Física Clássica: Termologia, Óptica e Ondas. Atual Editora, São Paulo, 2012.
+
+CAMPOS, Bruna Manuele. "Entropia – O que é? Características, Fórmula, Exemplos e Exercícios". Gestão Educacional. Disponível em: https://www.gestaoeducacional.com.br/entropia-o-que-e-caracteristicas/
+
+FERRARO, Nicolau Gilbert. "Termodinâmica". Blog Os Fundamentos da Física. Disponível em: https://osfundamentosdafisica.blogspot.com/
+
+RAMALHO JR, Francisco; FERRARO, Nicolau Gilberto; SOARES, Paulo Antônio de Toledo. Os Fundamentos da Física vol. 2. *Moderna, São Paulo*, 2007.
+
+VILLAS BÔAS, Newton; DOCA, Ricardo Helou; BISCUOLA, Gualter José. Tópicos de física, 2: termologia, ondulatória e óptica. **São Paulo: Saraiva**, 2012.
