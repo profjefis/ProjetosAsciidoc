@@ -1,0 +1,121 @@
+= Fundamentos da Óptica Geométrica
+:author: Jefferson Rodrigues de Oliveira 
+:email: jefferson.oliveira@ifes.edu.br
+:revnumber: 1.0
+:revdate: 02-11-2020
+:toc: left
+:sectnums: 0
+:stem: latexmath
+:imagesdir: images
+:icons: font
+:stylesheet: asciidoctor.css
+include::locale/attributes-pt_BR.adoc[]
+
+== Objetivos
+
+Caro aluno, logo abaixo apresentarei *os principais objetivos que você deve alcançar* ao estudar este conteúdo:
+
+- *Compreender* processos em que o fornecimento de calor a um sistema, ou corpo, pode produzir aumento de seu volume, resultando na realização de trabalho.
+- *Compreender* o primeiro princípio da termodinâmica: a quantidade de calor fornecida a um sistema é igual ao trabalho que ele realiza mais a variação de sua energia interna.
+- *Compreender* que o Primeiro Princípio da Termodinâmica expressa quantitativamente a Lei de Conservação da Energia.
+- *Saber aplicar* o Primeiro Princípio da Termodinâmica para resolver problemas envolvendo calor, trabalho e energia interna de um sistema.
+- *Compreender* que o funcionamento de máquinas térmicas requer sempre troca de calor entre duas fontes, uma quente e outra fria.
+- *Compreender* que, numa máquina térmica, só uma parte do calor fornecido é transformado em trabalho.
+
+== Raios de luz e feixes de luz
+
+A Óptica Geométrica estuda a *propagação da luz* nos diferentes meios e os fenômenos que dela decorrem: a *reflexão* e a *refração*. Este estudo é feito a partir da noção de *raio de luz* e de *princípios fundamentais*.
+
+Ondas de rádio, micro-ondas, radiações infravermelha e ultravioleta, luz, raios X, etc. São constituintes das chamadas *ondas eletromagnéticas*. A luz difere das demais ondas pelo fato de, ao incidir em nossas vidas, produzir as *sensações visuais*. Ou seja, a *luz* é o agente físico que, atuando nos órgãos visuais, é capaz de produzir a *sensação de visão*. 
+
+Para que um observador possa enxergar um corpo, seus olhos devem receber a luz que este corpo emite.
+
+Para representar a luz emitida pela chama de uma vela que atinge a vista de um observador, utilizaremos linhas orientadas que fornecem a direção e o sentido de propagação da luz. Tais linhas são denominadas *raios de luz*. 
+
+Na prática, é impossível isolar um raio de luz, que, na verdade, é apenas uma representação gráfica da luz em propagação. O que realmente existe são os chamados *feixes de luz*, que representamos graficamente como um conjunto de raios de luz. Os feixes de luz podem ser *paralelos*, *divergentes* ou *convergentes*.
+
+== Fontes de luz
+
+Todos os corpos que emitem luz são chamados de *fontes de luz*. 
+
+Podemos classificar estas fontes de acordo com a *emissão da luz*.
+
+- *Fonte de luz primária (corpo luminoso)*: corpos que emitem a luz que eles produzem, ou seja, *emitem luz própria*. Exemplo: Sol, lâmpada elétrica acesa, chamas das velas, etc.
+
+- *Fonte de luz secundária (corpo iluminado)*: corpos que emitem a luz que recebem de outros corpos, ou seja *não produzem luz própria*. Exemplo: a Lua, que envia à Terra a luz que recebe do Sol, das paredes iluminadas por uma lâmpada elétrica, etc.
+
+Podemos também classificar estas fontes de acordo com suas *dimensões*:
+
+- *Fonte de luz pontual (puntiforme)*: são fontes cujas dimensões são desprezíveis em relação à distância que a separam dos outros corpos. Exemplo: A maioria das estrelas, apesar delas serem enormes, as distância que as separam do nosso planeta são muito maiores.
+
+- *Fonte de luz extensa*: são fontes cujas dimensões *não* são desprezíveis em relação à distância que a separam dos outros corpos. Exemplo: O Sol, observado da Terra.
+
+Por fim, também podemos classificar estas fontes de acordo com suas cores:
+
+- *Fonte de luz monocromática (simples)*: fonte de luz que apresentam apenas uma cor. Exemplo: a luz amarela emitida por lâmpadas de vapor de sódio.
+
+- *Fonte de luz policromática (composta)*: fonte de luz que resulta da superposição de luzes de cores diferentes. Exemplo: a luz solar (branca).
+
+=== Velocidade da luz
+
+A velocidade da luz no vácuo é de $299792458\;m/s$, ou seja, aproximadamente $3,0\times 10^{8}\;m/s$. No *vácuo*, a luz apresenta *máxima velocidade*, independente da cor, ou seja, todas as cores apresentam a mesma velocidade igual a $c$. Entretanto, em meios materiais, as luzes monocromáticas apresentam velocidades diferentes, todas inferiores a $c$.
+
+=== Ano-luz
+
+*Ano-luz* é a unidade de *comprimento* que corresponde à distância percorrida pela luz, no vácuo, durante um ano. 
+
+Para se ter uma ideia da dimensão do ano-luz, vamos transformá-lo em metros e depois em quilômetros. Imagine que no instante $t=0$ um novo raio de luz partiu do Sol e vai para o "infinito". Vamos acompanhá-lo durante 1 ano e medir a distância percorrida.
+\begin{align*}
+    1\;ano  &= 365,25\;dias \\
+            &= 8776\;horas \\
+            &= 525960\;min \\
+            &= 31557600\;s \\
+            &\approx 3,16\times 10^{7}\;s
+\end{align*}
+Utilizando a fórmula da velocidade média:
+\begin{align*}
+    v &= \dfrac{\Delta S}{\Delta t} \\
+    c &= \dfrac{d}{t} \\
+    d &= c \cdot t \\
+    d &= 3,0\times 10^{8} \cdot 3,16\times 10^{7} \\
+    d &\approx 9,5 \times 10^{15}
+\end{align*}
+Sendo assim, a velocidade da luz no vácuo é de aproximadamente $9,5\times 10^{15}\;m$ ou $9,5\times 10^{12}\;km$
+
+Esta unidade é bastante utilizada na *Astronomia*, devido às distância das estrelas até o nosso planeta.
+
+== Classificação dos meios
+
+- *Meios transparentes* são aqueles que permitem que a luz os atravesse descrevendo *trajetórias regulares e bem definidas*, ou seja, quando a luz atravessa o meio  e *permite* a visualização nítida dos objetos. O único meio absolutamente transparente é o vácuo, todavia, também podem ser considerados transparentes o ar atmosférico, a água pura, entre outros.
+
+- *Meios translúcidos* são aqueles em que a luz descreve *trajetórias irregulares com intensa difusão (espelhamento aleatório)*, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e *não permite* uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.
+
+- *meios opacos* são aqueles através dos quais *a luz não se propaga*. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.
+
+Um meio em que todos os seus elementos de volume possuem as mesmas propriedades é denominado *homogêneo*. O vácuo é um meio homogêneo por excelência. O ar, em pequenas quantidades, pode ser considerado homogêneo. Mas a atmosfera com um todo não é homogênea.
+
+== Fenômenos da Óptica Geométrica
+
+A óptica geométrica estuda, basicamente, trajetórias de luz em sua propagação. São de especial interesse nesse estudo dois fenômenos físicos fundamentais: a *reflexão* e a *refração*.
+
+- *Reflexão* é o fenômeno que consiste no fato de a luz voltar a se propagar no meio de origem, após incidir na superfície de separação deste com outro meio.
+
+- *Refração* é o fenômeno que consiste no fato de a luz passar de um meio para outro diferente.
+
+== A cor de um corpo
+
+== Princípios da Ótica Geométrica
+
+== Sombra, penumbra e eclipse
+
+== Referências
+
+CALÇADA, Caio Sérgio; SAMPAIO, José Luiz. Física Clássica: Termologia, Óptica e Ondas. Atual Editora, São Paulo, 2012.
+
+CAMPOS, Bruna Manuele. "Entropia – O que é? Características, Fórmula, Exemplos e Exercícios". Gestão Educacional. Disponível em: https://www.gestaoeducacional.com.br/entropia-o-que-e-caracteristicas/
+
+FERRARO, Nicolau Gilbert. "Termodinâmica". Blog Os Fundamentos da Física. Disponível em: https://osfundamentosdafisica.blogspot.com/
+
+RAMALHO JR, Francisco; FERRARO, Nicolau Gilberto; SOARES, Paulo Antônio de Toledo. Os Fundamentos da Física vol. 2. *Moderna, São Paulo*, 2007.
+
+VILLAS BÔAS, Newton; DOCA, Ricardo Helou; BISCUOLA, Gualter José. Tópicos de física, 2: termologia, ondulatória e óptica. **São Paulo: Saraiva**, 2012.
