@@ -80,7 +80,7 @@ Utilizando a fórmula da velocidade média:
     d &= 3,0\times 10^{8} \cdot 3,16\times 10^{7} \\
     d &\approx 9,5 \times 10^{15}
 \end{align*}
-Sendo assim, a velocidade da luz no vácuo é de aproximadamente $9,5\times 10^{15}\;m$ ou $9,5\times 10^{12}\;km$
+Sendo assim, a velocidade da luz no vácuo é de aproximadamente $9,5\times 10^{15}\;m$ ou $9,5\times 10^{12}\;km$.
 
 Esta unidade é bastante utilizada na *Astronomia*, devido às distância das estrelas até o nosso planeta.
 
@@ -90,7 +90,7 @@ Esta unidade é bastante utilizada na *Astronomia*, devido às distância das es
 
 - *Meios translúcidos* são aqueles em que a luz descreve *trajetórias irregulares com intensa difusão (espelhamento aleatório)*, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e *não permite* uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.
 
-- *meios opacos* são aqueles através dos quais *a luz não se propaga*. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.
+- *Meios opacos* são aqueles através dos quais *a luz não se propaga*. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.
 
 Um meio em que todos os seus elementos de volume possuem as mesmas propriedades é denominado *homogêneo*. O vácuo é um meio homogêneo por excelência. O ar, em pequenas quantidades, pode ser considerado homogêneo. Mas a atmosfera com um todo não é homogênea.
 
@@ -100,11 +100,49 @@ A óptica geométrica estuda, basicamente, trajetórias de luz em sua propagaç�
 
 - *Reflexão* é o fenômeno que consiste no fato de a luz voltar a se propagar no meio de origem, após incidir na superfície de separação deste com outro meio.
 
+Quando o feixe de luz incidente e refletido são paralelos entre si, denominamos de *reflexão regular*, é o que acontece, por exemplo, em superfícies lisas e polidas.
+
 - *Refração* é o fenômeno que consiste no fato de a luz passar de um meio para outro diferente.
 
 == A cor de um corpo
 
+A luz solar (ou a luz emitida por uma lâmpada fluorescente) é denominada *luz branca*.
+
+A luz branca solar é *policromática*, ou seja, é composta por diversas cores, das quais podemos destacar sete: vermelho, alaranjado, amarelo, verde, azul, anil e violeta.
+
+Por que quando iluminada pela luz do Sol, as folhas de uma árvore nos parecem verdes?
+
+Porque essas folhas refletem de forma difusa para o meio a cpr componente verde e absorvendo as demais cores componentes da luz branca. 
+
+Vale ressaltar os seguintes pontos:
+
+- Se vermos um corpo *branco,* é porque ele está *refletindo todas as cores* do espectro solar.
+
+- Se "vermos" um corpo *preto*, é porque ele está *absorvendo todas as cores* do espectro solar.
+
+- Um corpo que nos parece vermelho quando iluminado pela luz branca solar se apresentará escuro quando iluminado por luz monocromática de cor diferente da vermelha (azul, por exemplo).
+
 == Princípios da Ótica Geométrica
+
+Os princípios da Óptica Geométrica são:
+
+- *Princípio da propagação retilínea*:
+ 
+Nos meios homogêneos e transparentes, a luz se propaga em linha reta.
+
+Este princípio constitui a base para a explicação de diversos fenômenos, como, por exemplo, a formação de sombras e penumbras.
+
+- *Princípio da independência dos raios de luz*:
+
+Cada raio de luz se propaga em um meio, independentemente de qualquer outro raio.
+
+Isto significa que, mesmo havendo cruzamento entre raios de luz, cada um segue seu caminho se nada tivesse acontecido.
+
+- *Princípio da reversibilidade da luz*:
+
+A trajetória seguida pela luz não depende do seu sentido de percurso,
+
+Ou seja, se a luz faz um determinado percurso, é capaz de fazer o mesmo percurso em sentido inverso.
 
 == Sombra, penumbra e eclipse
 

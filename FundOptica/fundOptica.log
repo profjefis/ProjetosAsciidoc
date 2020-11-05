@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  3 NOV 2020 16:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  5 NOV 2020 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -968,90 +968,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--345
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--362
-[]\TU/lmr/bx/n/14.4 Sombra, penumbra e
- []
-
-
-Underfull \vbox (badness 7344) has occurred while \output is active []
-
-
-
 Package Fancyhdr Warning: \headheight is too small (13.59999pt): 
 Make it at least 14.03358pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 1137) in paragraph at lines 417--418
+[]\TU/lmr/m/n/10.95 Cada raio de luz se propaga em um
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--436
+[]\TU/lmr/bx/n/14.4 Sombra, penumbra e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 []\TU/lmr/m/n/10.95 CAMPOS, Bruna Manuele. ”En-
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 368--369
+Underfull \hbox (badness 2343) in paragraph at lines 442--443
 \TU/lmr/m/n/10.95 tropia – O que é? Características,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
 \TU/lmr/m/n/10.95 Fórmula, Exemplos e Exercícios”.
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 368--369
+Underfull \hbox (badness 2285) in paragraph at lines 442--443
 \TU/lmr/m/n/10.95 Gestão Educacional. Disponível em:
  []
 
 
-Overfull \hbox (36.14615pt too wide) in paragraph at lines 368--369
+Overfull \hbox (36.14615pt too wide) in paragraph at lines 442--443
 [][]\TU/lmr/m/n/10.95 https://www.gestaoeducacional.com.br/entropia-
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 371--372
+Underfull \hbox (badness 3579) in paragraph at lines 445--446
 []\TU/lmr/m/n/10.95 FERRARO, Nicolau Gilbert. ”Ter-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 \TU/lmr/m/n/10.95 modinâmica”. Blog Os Funda-
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 371--372
+Underfull \hbox (badness 4846) in paragraph at lines 445--446
 \TU/lmr/m/n/10.95 mentos da Física. Disponível em:
  []
 
 
-Overfull \hbox (17.11505pt too wide) in paragraph at lines 371--372
+Overfull \hbox (17.11505pt too wide) in paragraph at lines 445--446
 [][]\TU/lmr/m/n/10.95 https://osfundamentosdafisica.blogspot.com/[][] 
  []
 
-[4
+[4] [5
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 380.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
  (./fundOptica.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 380.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
-
-
-Package rerunfilecheck Warning: File `fundOptica.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `fundOptica.out':
-(rerunfilecheck)             Before: 38BBD8FC6EEF304A9C889365A8E466F4;687
-(rerunfilecheck)             After:  EDC4DB0574A92A44883853532DDFB520;686.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 454.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package rerunfilecheck Info: File `fundOptica.out' has not changed.
+(rerunfilecheck)             Checksum: EDC4DB0574A92A44883853532DDFB520;686.
  ) 
 Here is how much of TeX's memory you used:
- 25946 strings out of 479819
- 512367 string characters out of 5895846
- 941698 words of memory out of 5000000
- 42638 multiletter control sequences out of 15000+600000
+ 25948 strings out of 479819
+ 512399 string characters out of 5895846
+ 941695 words of memory out of 5000000
+ 42640 multiletter control sequences out of 15000+600000
  538971 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  59i,12n,75p,832b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on fundOptica.pdf (4 pages).
+Output written on fundOptica.pdf (5 pages).
