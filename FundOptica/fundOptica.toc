@@ -2,15 +2,14 @@
 \contentsline {section}{\numberline {1}Objetivos}{1}{section.1}%
 \contentsline {section}{\numberline {2}Raios de luz e feixes de luz}{1}{section.2}%
 \contentsline {section}{\numberline {3}Fontes de luz}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Velocidade da luz}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Velocidade da luz}{3}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Ano-luz}{3}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Classificação dos meios}{3}{section.4}%
-\contentsline {section}{\numberline {5}Fenômenos da Óptica Geométrica}{5}{section.5}%
-\contentsline {section}{\numberline {6}A cor de um corpo}{6}{section.6}%
-\contentsline {subsection}{\numberline {6.1}A cor do céu}{7}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Princípios da Ótica Geométrica}{7}{section.7}%
-\contentsline {section}{\numberline {8}Sombra e penumbra}{7}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Eclipse}{8}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Câmera escura}{9}{subsection.8.2}%
-\contentsline {section}{\numberline {9}Exercícios de Revisão}{11}{section.9}%
-\contentsline {section}{\numberline {10}Referências}{11}{section.10}%
+\contentsline {section}{\numberline {5}Fenômenos da Óptica Geométrica}{6}{section.5}%
+\contentsline {section}{\numberline {6}A cor de um corpo}{7}{section.6}%
+\contentsline {subsection}{\numberline {6.1}A cor do céu}{8}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Princípios da Ótica Geométrica}{8}{section.7}%
+\contentsline {section}{\numberline {8}Sombra e penumbra}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Eclipse}{9}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Câmera escura}{10}{subsection.8.2}%
+\contentsline {section}{\numberline {9}Referências}{13}{section.9}%

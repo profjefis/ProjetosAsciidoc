@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  10 NOV 2020 13:18
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  10 NOV 2020 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -908,12 +908,9 @@ LaTeX Info: Redefining \nameref on input line 220.
 \@outlinefile=\write6
 \openout6 = `fundOptica.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 222
 .
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -922,34 +919,25 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 222
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+) (./fundOptica.toc)
 \tf@toc=\write7
 \openout7 = `fundOptica.toc'.
+
 
 (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-File: images/img0.png Graphic file (type bmp)
-<images/img0.png>
-File: images/img3.png Graphic file (type bmp)
-<images/img3.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: images/img1.png Graphic file (type bmp)
-<images/img1.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [1
 
 
 ]
+File: images/img0.png Graphic file (type bmp)
+<images/img0.png>
+File: images/img3.png Graphic file (type bmp)
+<images/img3.png>
+File: images/img1.png Graphic file (type bmp)
+<images/img1.png>
 File: images/img2.png Graphic file (type bmp)
 <images/img2.png>
 
@@ -958,6 +946,12 @@ Underfull \hbox (badness 1622) in paragraph at lines 324--325
  []
 
 
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 13.59999pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[2]
 Underfull \hbox (badness 3780) in paragraph at lines 336--337
 []\TU/lmr/bx/n/10.95 Fonte de luz monocromática
  []
@@ -973,47 +967,44 @@ Underfull \hbox (badness 1009) in paragraph at lines 344--345
 m/it/10.95 s$\TU/lmr/m/n/10.95 , ou seja, aproximada-
  []
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 13.59999pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[2]
 File: images/img4.png Graphic file (type bmp)
 <images/img4.png>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: images/img5.png Graphic file (type bmp)
 <images/img5.png>
-File: images/img6.png Graphic file (type bmp)
-<images/img6.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 486--486
-[]\TU/lmr/bx/n/14.4 Fenômenos da Óptica
- []
-
+File: images/img6.png Graphic file (type bmp)
+<images/img6.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 560--560
+[]\TU/lmr/bx/n/14.4 Fenômenos da Óptica
+ []
+
 File: images/img7.png Graphic file (type bmp)
 <images/img7.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: images/img8.png Graphic file (type bmp)
 <images/img8.png>
 File: images/img9.png Graphic file (type bmp)
 <images/img9.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (13.59999pt): 
@@ -1021,53 +1012,49 @@ Make it at least 14.03358pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[5]
+[6]
 File: images/img10.png Graphic file (type bmp)
 <images/img10.png>
 File: images/img11.png Graphic file (type bmp)
 <images/img11.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: images/img12.png Graphic file (type bmp)
 <images/img12.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: images/img13.png Graphic file (type bmp)
 <images/img13.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
 File: images/img14.png Graphic file (type bmp)
 <images/img14.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: images/img15.png Graphic file (type bmp)
 <images/img15.png>
 
-Underfull \hbox (badness 1137) in paragraph at lines 651--652
+Underfull \hbox (badness 1137) in paragraph at lines 725--726
 []\TU/lmr/m/n/10.95 Cada raio de luz se propaga em um
  []
 
 File: images/img16.png Graphic file (type bmp)
 <images/img16.png>
+[8]
 File: images/img17.png Graphic file (type bmp)
 <images/img17.png>
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 4543) in paragraph at lines 683--684
+Underfull \hbox (badness 4543) in paragraph at lines 757--758
 \TU/lmr/m/n/10.95 Primeiramente, vamos considerar um
  []
 
-[7]
 File: images/img18.png Graphic file (type bmp)
 <images/img18.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: images/img19.png Graphic file (type bmp)
 <images/img19.png>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1076,14 +1063,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: images/img20.png Graphic file (type bmp)
 <images/img20.png>
-File: images/img21.png Graphic file (type bmp)
-<images/img21.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8]
-Underfull \hbox (badness 2221) in paragraph at lines 737--738
+File: images/img21.png Graphic file (type bmp)
+<images/img21.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 7012) has occurred while \output is active []
+
+ [9]
+Underfull \hbox (badness 2221) in paragraph at lines 811--812
 []\TU/lmr/bx/n/10.95 Região 4\TU/lmr/m/n/10.95 : penumbra projetada.
  []
 
@@ -1093,113 +1086,104 @@ File: images/img22.png Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 772--773
+Underfull \hbox (badness 1484) in paragraph at lines 846--847
 \TU/lmr/m/n/10.95 da Copa do Mundo, um cinegrafista,
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 772--773
+Underfull \hbox (badness 1062) in paragraph at lines 846--847
 \TU/lmr/m/n/10.95 escuro, onde existia uma bandeira da
  []
 
-
-Underfull \hbox (badness 1082) in paragraph at lines 793--797
+[10]
+Underfull \hbox (badness 1082) in paragraph at lines 867--871
 \TU/lmr/m/n/10.95 d) Uma pessoa na Terra se situa na
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 793--797
+Underfull \hbox (badness 10000) in paragraph at lines 867--871
 
  []
 
 
-Underfull \vbox (badness 7685) has occurred while \output is active []
-
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 799--805
+Underfull \hbox (badness 10000) in paragraph at lines 873--879
 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: images/imgexe1.png Graphic file (type bmp)
 <images/imgexe1.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: images/imgexe2.png Graphic file (type bmp)
 <images/imgexe2.png>
 
-Underfull \vbox (badness 1231) has occurred while \output is active []
+Underfull \vbox (badness 2744) has occurred while \output is active []
 
- [10]
-Underfull \hbox (badness 10000) in paragraph at lines 862--863
-[]\TU/lmr/m/n/10.95 CAMPOS, Bruna Manuele. ”En-
+ [11]
+Underfull \hbox (badness 3019) in paragraph at lines 984--985
+[]\TU/lmr/bx/n/10.95 (ESCS DF/2010) \TU/lmr/m/n/10.95 Um homem tem
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 862--863
-\TU/lmr/m/n/10.95 tropia – O que é? Características,
+Underfull \hbox (badness 1168) in paragraph at lines 984--985
+\TU/lmr/m/n/10.95 câmara escura através de um orifício,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--863
-\TU/lmr/m/n/10.95 Fórmula, Exemplos e Exercícios”.
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1009
+
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 862--863
-\TU/lmr/m/n/10.95 Gestão Educacional. Disponível em:
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 1021--1026
+
  []
 
 
-Overfull \hbox (36.14615pt too wide) in paragraph at lines 862--863
-[][]\TU/lmr/m/n/10.95 https://www.gestaoeducacional.com.br/entropia-
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
+[]\TU/lmr/m/n/10.95 FERRARO, Nicolau Gilbert.
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 865--866
-[]\TU/lmr/m/n/10.95 FERRARO, Nicolau Gilbert. ”Ter-
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
+\TU/lmr/m/n/10.95 ”Óptica”. Blog Os Fundamen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 865--866
-\TU/lmr/m/n/10.95 modinâmica”. Blog Os Funda-
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1037
+\TU/lmr/m/n/10.95 tos da Física. Disponível em:
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 865--866
-\TU/lmr/m/n/10.95 mentos da Física. Disponível em:
- []
-
-
-Overfull \hbox (17.11505pt too wide) in paragraph at lines 865--866
+Overfull \hbox (17.11505pt too wide) in paragraph at lines 1036--1037
 [][]\TU/lmr/m/n/10.95 https://osfundamentosdafisica.blogspot.com/[][] 
  []
 
-[11
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 874.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 874.
- (./fundOptica.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 874.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 874.
+Underfull \vbox (badness 2065) has occurred while \output is active []
 
+ [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1045.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1045.
 
-Package rerunfilecheck Warning: File `fundOptica.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+(./fundOptica.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1045.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1045.
 
-Package rerunfilecheck Info: Checksums for `fundOptica.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  38D5EE32E6DC58436B1429552A6E17C7;918.
+Package rerunfilecheck Info: File `fundOptica.out' has not changed.
+(rerunfilecheck)             Checksum: A3E6E55A7924D78EF9B7D47D6D405064;858.
  ) 
 Here is how much of TeX's memory you used:
- 26122 strings out of 479819
- 515251 string characters out of 5895846
- 941578 words of memory out of 5000000
- 42779 multiletter control sequences out of 15000+600000
+ 26127 strings out of 479819
+ 515300 string characters out of 5895846
+ 942698 words of memory out of 5000000
+ 42782 multiletter control sequences out of 15000+600000
  539003 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 59i,11n,75p,832b,414s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,75p,832b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on fundOptica.pdf (11 pages).
+Output written on fundOptica.pdf (13 pages).
