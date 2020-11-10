@@ -5,7 +5,7 @@
 :chapter-label: Capítulo
 :chapter-refsig: {chapter-label}
 :example-caption: Exemplo
-:figure-caption: Figura
+:figure-caption: Fig.
 :important-caption: Importante
 :last-update-label: Última atualização
 ifdef::listing-caption[:listing-caption: Listagem]

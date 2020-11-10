@@ -2,7 +2,7 @@
 :author: Jefferson Rodrigues de Oliveira 
 :email: jefferson.oliveira@ifes.edu.br
 :revnumber: 1.0
-:revdate: 02-11-2020
+:revdate: 09-11-2020
 :toc: left
 :sectnums: 0
 :stem: latexmath
@@ -32,7 +32,21 @@ Para que um observador possa enxergar um corpo, seus olhos devem receber a luz q
 
 Para representar a luz emitida pela chama de uma vela que atinge a vista de um observador, utilizaremos linhas orientadas que fornecem a direção e o sentido de propagação da luz. Tais linhas são denominadas *raios de luz*. 
 
-Na prática, é impossível isolar um raio de luz, que, na verdade, é apenas uma representação gráfica da luz em propagação. O que realmente existe são os chamados *feixes de luz*, que representamos graficamente como um conjunto de raios de luz. Os feixes de luz podem ser *paralelos*, *divergentes* ou *convergentes*.
+image::img0.png[title="Raios de luz que chegam no observador. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
+
+Na prática, é impossível isolar um raio de luz, que, na verdade, é apenas uma representação gráfica da luz em propagação. O que realmente existe são os chamados *feixes de luz*, que representamos graficamente como um conjunto de raios de luz. Os feixes de luz podem ser: 
+
+- *Cilíndricos*: os raios de luz são paralelos entre si.
+
+image::img1.png[title="Feixe cilíndrico. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+- *Cônicos divergentes*: os raios de luz divergem de um mesmo ponto *P*.
+
+image::img2.png[title="Feixe cônico divergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+- *Cônicos convergentes*: os raios de luz convergem para um mesmo ponto *p*.
+
+image::img3.png[title="Feixe cônico convergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
 == Fontes de luz
 
@@ -86,13 +100,65 @@ Esta unidade é bastante utilizada na *Astronomia*, devido às distância das es
 
 == Classificação dos meios
 
-- *Meios transparentes* são aqueles que permitem que a luz os atravesse descrevendo *trajetórias regulares e bem definidas*, ou seja, quando a luz atravessa o meio  e *permite* a visualização nítida dos objetos. O único meio absolutamente transparente é o vácuo, todavia, também podem ser considerados transparentes o ar atmosférico, a água pura, entre outros.
+*A) Meios transparentes* são aqueles que permitem que a luz os atravesse descrevendo *trajetórias regulares e bem definidas*, ou seja, quando a luz atravessa o meio  e *permite* a visualização nítida dos objetos. O único meio absolutamente transparente é o vácuo, todavia, também podem ser considerados transparentes o ar atmosférico, a água pura, entre outros.
 
-- *Meios translúcidos* são aqueles em que a luz descreve *trajetórias irregulares com intensa difusão (espelhamento aleatório)*, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e *não permite* uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.
+image::img4.png[title="Meio transparente. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
 
-- *Meios opacos* são aqueles através dos quais *a luz não se propaga*. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.
+*B) Meios translúcidos* são aqueles em que a luz descreve *trajetórias irregulares com intensa difusão (espelhamento aleatório)*, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e *não permite* uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.
+
+image::img5.png[title="Meio translúcido. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
+
+*C) Meios opacos* são aqueles através dos quais *a luz não se propaga*. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.
+
+image::img6.png[title="Meio opaco. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
 
 Um meio em que todos os seus elementos de volume possuem as mesmas propriedades é denominado *homogêneo*. O vácuo é um meio homogêneo por excelência. O ar, em pequenas quantidades, pode ser considerado homogêneo. Mas a atmosfera com um todo não é homogênea.
+
+Quando as associadas a um elemento de volume independem da direção, o meio é chamado de *isotrópico*. Por exemplo, em um cristal cúbico, a velocidade da luz é igual qualquer que seja a direção em que é medida, caracterizando assim um meio isotrópico. Meios que simultaneamente são homogêneos e isotrópicos são denominados de *ordinários*.
+
+*Exercício Resolvido {counter:exeres}*
+
+Marque *V* para o item verdadeiro e *F* para o item falso:
+
+a) O ar atmosférico de uma sala é um meio transparente. +
+b) A água em camadas espessas é um meio transparente. +
+c) O vidro fosco é um meio translúcido. +
+d) A atmosfera terrestre, cuja densidade diminui com o aumento da altitude, é um meio homogêneo. +
+e) Nos meios transparentes e translúcidos a luz se propaga em linha reta.
+
+[click.resposta]
+--
+a) *Verdadeiro*. O ar atmosférico existente em uma sala é um meio transparente. +
+b) *Falso*. A água em pequenas camadas e um meio transparente. Já em camadas espessas não é um meio transparente. +
+c) *Verdadeiro*. Através do vidro fosco os objetos não são vistos nitidamente. Logo é um meio translúcido. +
+d) *Falso*. Um meio homogêneo apresenta as mesmas propriedades em todos os seus pontos. +
+e) *Falso*. A luz se propaga em linha reta nos meios transparentes e homogêneos.
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+Um ano-luz tem a dimensão de:
+
+a) tempo; +
+b) velocidade; +
+c) aceleração; +
+d) comprimento; +
+e) energia.
+
+[click.resposta]
+--
+Um *ano-luz* é a distância que a luz percorre no vácuo durante um ano terrestre. A dimensão de ano-luz é *comprimento*. +
+*Resposta: d.*
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+Uma estrela está situada a $4\;anos-luz$ da Terra. Qual a distância entre a estrela e a Terra em quilômetros?
+
+[click.resposta]
+--
+$1\;ano-luz$ corresponde aproximadamente a $9,5\times 10^{12}\;km$. Portanto, $4\;anos-luz$ correspondem a $4\cdot 9,5\times 10^{12}\;km = 3,8.10^{13}\;km$.
+--
 
 == Fenômenos da Óptica Geométrica
 
@@ -100,9 +166,24 @@ A óptica geométrica estuda, basicamente, trajetórias de luz em sua propagaç�
 
 - *Reflexão* é o fenômeno que consiste no fato de a luz voltar a se propagar no meio de origem, após incidir na superfície de separação deste com outro meio.
 
-Quando o feixe de luz incidente e refletido são paralelos entre si, denominamos de *reflexão regular*, é o que acontece, por exemplo, em superfícies lisas e polidas.
-
 - *Refração* é o fenômeno que consiste no fato de a luz passar de um meio para outro diferente.
+
+image::img7.png[title="Luz incidente, refletida e refratada. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+De acordo com a regularidade da superfície que a luz incide, pode-se determinar dois tipos de reflexão e refração: *regular* e *difusa*.
+
+Para entender melhor esses dois tipos de reflexão e refração, vamos pensar em suas situações:
+
+1. Superfície da água de um lago isenta de qualquer tipo de perturbação.
+2. Superfície da água de um lago perturbado por gotas de chuva.
+
+Na primeira situação, observa-se que após a incidência da luz na água, tanto o feixe de luz refletido quanto o refratado *são de forma cilíndrica*, ou seja, os raios são paralelos entre si. Essa situação caracteriza a reflexão e refração *regular*. Este tipo de reflexão e refração ocorrem em *superfícies perfeitamente lisas*.
+
+image::img8.png[title="Reflexão e Refração regular. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+Já na segunda situação, observa-se que após a incidência da luz na água, tanto o feixe de luz refletido quanto o refratado *não são de forma cilíndrica*, as componentes dos raios de luz possuem diversas direções e se espalham de forma aleatória. Essa situação caracteriza a reflexão e refração *difusa*. Este tipo de reflexão e refração ocorrem em *superfícies que possuem irregularidades*. 
+
+image::img9.png[title="Reflexão e Refração difusa. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
 == A cor de um corpo
 
@@ -112,15 +193,37 @@ A luz branca solar é *policromática*, ou seja, é composta por diversas cores,
 
 Por que quando iluminada pela luz do Sol, as folhas de uma árvore nos parecem verdes?
 
-Porque essas folhas refletem de forma difusa para o meio a cpr componente verde e absorvendo as demais cores componentes da luz branca. 
+Porque essas folhas refletem de forma difusa para o meio a cor componente verde e absorvendo as demais cores componentes da luz branca. 
+
+image::img10.png[title="Cor de uma folha verde. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
 Vale ressaltar os seguintes pontos:
 
 - Se vermos um corpo *branco,* é porque ele está *refletindo todas as cores* do espectro solar.
 
+image::img11.png[title="Corpo branco. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
+
 - Se "vermos" um corpo *preto*, é porque ele está *absorvendo todas as cores* do espectro solar.
 
+image::img12.png[title="Corpo negro. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
+
 - Um corpo que nos parece vermelho quando iluminado pela luz branca solar se apresentará escuro quando iluminado por luz monocromática de cor diferente da vermelha (azul, por exemplo).
+
+Quando observamos um objeto através de uma lâmina de acrílico vermelha, por exemplo, apenas conseguiremos distinguir regiões vermelhas e escuras. Isto acorre porque a lâmina funciona como um *filtro*, que refrata (deixa passar) seletivamente a luz vermelha, absorvendo substancialmente as demais cores do espectro (regiões escuras).  
+
+image::img13.png[title="Esquema da refração seletiva. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+=== A cor do céu
+
+Ao atravessar a atmosfera terrestre, a luz sofre difusão, isto é, espalhamento, de maneira mais acentuada na luz de cor *azul*.
+
+Se não existe atmosfera, o céu seria sempre *negro*, exceto na direção do Sol. Este fato é notado, por exemplo, em grandes altitudes e na Lua (por não ter atmosfera).
+
+As gotas de água que compõem as nuvens espalham, com a mesma intensidade, luzes de todas as cores. Por isto a nuvens são vistas *brancas*.
+
+No nascer e por Sol, a luz atravessa uma espessura maior de atmosfera antes de atingir a atmosfera. Nessas condições, em virtude do maior espalhamento da luz azul e de cores próxima a ela, recebemos a luz subtraída destas cores, por este motivo, o Sol e o céu ao seu redor são vistos *avermelhados*.
+
+image::img14.png[title="Cor do céu. Fonte: Física Clássica. Vol 2.", align="center"]
 
 == Princípios da Ótica Geométrica
 
@@ -132,11 +235,15 @@ Nos meios homogêneos e transparentes, a luz se propaga em linha reta.
 
 Este princípio constitui a base para a explicação de diversos fenômenos, como, por exemplo, a formação de sombras e penumbras.
 
+image::img15.png[title="Propagação retilínea. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
 - *Princípio da independência dos raios de luz*:
 
 Cada raio de luz se propaga em um meio, independentemente de qualquer outro raio.
 
 Isto significa que, mesmo havendo cruzamento entre raios de luz, cada um segue seu caminho se nada tivesse acontecido.
+
+image::img16.png[title="Independência dos raios. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
 
 - *Princípio da reversibilidade da luz*:
 
@@ -144,7 +251,116 @@ A trajetória seguida pela luz não depende do seu sentido de percurso,
 
 Ou seja, se a luz faz um determinado percurso, é capaz de fazer o mesmo percurso em sentido inverso.
 
-== Sombra, penumbra e eclipse
+image::img17.png[title="Reversibilidade. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
+
+== Sombra e penumbra
+
+Primeiramente, vamos considerar um fonte puntiforme (*F*), um disco opaco (*D*) e um anteparo também opaco (*A*). Na montagem sugerida na figura, podemos perceber que, por causa da *propagação retilínea da luz*, teremos uma região desprovida de iluminação entre *D* e *A*, esta região (que é um tronco de cone) denominamos de *sombra*. Em *A* temos uma região circular também isenta de iluminação, que chamamos de *sombra projetada*. 
+
+image::img18.png[title="Sombra produzida por um fonte puntiforme. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+Neste segundo caso, pelo fato da fonte de luz ser extensa, além das regiões de sombra e sombra projetada, teremos ainda regiões de *penumbra* e *penumbra projetada*. Nestas regiões a iluminação será *parcial*.
+
+image::img19.png[title="Sombra produzida por um fonte extensa. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+=== Eclipse
+
+Os eclipses são fenômenos astronômicos regulares e previsíveis. A explicação para a ocorrência dos eclipses está relacionada com a *propagação retilínea da luz*. É com base neste princípio que podemos explicar o desaparecimento temporário da Lua em certas ocasiões de lua cheia ou até mesmo do Sol, em algumas situações de lua Nova.
+
+Podemos destacar dois casos.
+
+1) *Eclipse da lua*: neste caso, a Lua situa-se no cone de sombra da Terra. 
+
+image::img20.png[title="Eclipse da Lua. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+O eclipse da Lua ocorre na fase de *lua cheia*.
+
+1) *Eclipse do Sol*: neste caso, a Lua projeta sobre a Terra uma região de sombra e penumbra. 
+
+image::img21.png[title="Eclipse do Sol. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+- *Região 1*: sombra da Lua.
+- *Região 2*: penumbra.
+- *Região 3*: sombra da Lua projetada na Terra. Nesta região ocorre o eclipse total ou anular do Sol.
+- *Região 4*: penumbra projetada. Nesta região ocorre o elipse parcial do Sol, caso em que uma parte do "disco solar" permanece visível.
+- *Região 5*: não há eclipse nesta região. O "disco solar" é visualizado integralmente.
+
+O eclipse da Sol ocorre na fase de *lua nova*.
+
+=== Câmera escura
+
+A *câmera escura* nada mais é que uma caixa de *paredes opacas*, sendo uma delas dotada de um orifício *$O$*, diante do qual é colocado um corpo luminoso.
+
+Os raios emanados pelo corpo, após atravessarem o orifício *$O$*, incidem na parede ao fundo da caixa, projetando uma *imagem semelhante* ao corpo, porém *invertida*.
+
+image::img22.png[title="Câmera escura. Fonte: Tópicos de Física. Vol 2.", align="center"]
+
+Considerando a figura, podemos notar que os triângulos $OAB$ e $OA'B'$ são semelhantes. Sendo assim:
+\begin{equation*}
+    \dfrac{A'B'}{AB}=\dfrac{b}{a}
+\end{equation*}
+
+Para uma mesma câmera e um mesmo corpo luminoso, os comprimentos *$b$* (profundidade) e *$AB$* (comprimento do corpo luminoso) são constantes. Desta forma, podemos afirmar que *$A'B'$* (comprimento da figura projetada) e *$a$* (distância do corpo luminoso ao orifício) são *inversamente proporcionais*. Por exemplo, se dobramos a distância *$A'B'$*, a distância *$a$* será reduzida pela metade.
+
+*Exercício Resolvido {counter:exeres}*
+
+*(UNIRIO RJ/1995)* Durante a final da Copa do Mundo, um cinegrafista, desejando alguns efeitos especiais, gravou cena em um estúdio completamente escuro, onde existia uma bandeira da "Azurra" (azul e branca) que foi iluminada por um feixe de luz amarela monocromática. Quando a cena foi exibida ao público, a bandeira apareceu:
+
+a)	verde e branca. +
+b)	verde e amarela. +
+c)	preta e branca. +
+d)	preta e amarela. +
+e)	azul e branca.
+
+[click.resposta]
+--
+A cor azul absorve a luz monocromática amarela, portanto observamos o *preto.* A cor branca reflete a cor amarela, portanto continuamos a observar o *amarela*. +
+*Resposta: d.*
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+Marque *V* para verdadeiro e *F* para falso:
+
+a) A formação de penumbra de um corpo opaco ocorre quando a fonte de luz é extensa. +
+b) O eclipse do Sol só ocorre numa fase de Lua Cheia e, portanto, todos os meses têm-se eclipses do Sol. +
+c) Quando ocorre eclipse do Sol a posição relativa dos três astros é Sol, Terra e Lua. +
+d) Uma pessoa na Terra se situa na penumbra da Lua determinada pelo Sol. Esta pessoa presencia um eclipse parcial do Sol. +
+
+[click.resposta]
+--
+a) *Verdadeiro*. Quando uma fonte de luz extensa é colocada próxima de um corpo opaco observam-se regiões parcialmente iluminadas. São as penumbras. +
+b) *Falso*. No eclipse do Sol, a posição relativa dos astros é Sol, Lua e Terra. Portanto, o eclipse do Sol ocorre na fase de Lua Nova. Os eclipses não ocorrem todos os meses pois as órbitas da Lua em torno da Terra e da Terra em torno do Sol não pertencem ao mesmo plano. Os eclipses ocorrem quando a orbita da Lua intercepta o plano da órbita da Terra e ainda deve haver um alinhamento entre os três astros. +
+c) *Falso*. A posição relativa dos astros é Sol, Lua e Terra. +
+d) *Verdadeiro*. Estando na penumbra da Lua determinada pelo Sol o eclipse é parcial. +
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+Entre uma fonte puntiforme e uma parede, coloca-se um lápis de $20\;cm$ de altura. A fonte de luz e o centro do lápis estão numa mesma reta perpendicular à parede. O lápis se encontra a $20\;cm$ da fonte e a $60\;cm$ da parede. Determine o comprimento da sombra do lápis projetada na parede.
+
+[click.resposta]
+--
+Da semelhança dos triângulos $FAB$ e $FCD$, temos:
+\begin{align*}
+    \dfrac{L}{20} &= \dfrac{80}{20} \\
+    L &= 80
+\end{align*}
+*Resposta*: $80\;cm$.
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+Um objeto $AB$ de altura $10\;cm$ encontra-se a $30\;cm$ de uma câmara escura de orifício, cujo comprimento é de $45\;cm$. 
+
+a) Qual é a altura da imagem? +
+b) Aproxima-se o objeto da câmara. A altura da imagem aumenta ou diminui?
+
+[click.resposta]
+--
+--
+
+== Exercícios de Revisão
 
 == Referências
 

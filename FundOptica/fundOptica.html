@@ -471,7 +471,7 @@ $(document).on('page:load', ready2);
 <span id="author" class="author">Jefferson Rodrigues de Oliveira</span><br>
 <span id="email" class="email"><a href=mailto:jefferson.oliveira@ifes.edu.br>jefferson.oliveira@ifes.edu.br</a></span><br>
 <span id="revnumber">versão 1.0,</span>
-<span id="revdate">02-11-2020</span>
+<span id="revdate">09-11-2020</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Índice</div>
@@ -486,10 +486,20 @@ $(document).on('page:load', ready2);
 </li>
 <li><a href="#_classificação_dos_meios">4. Classificação dos meios</a></li>
 <li><a href="#_fenômenos_da_óptica_geométrica">5. Fenômenos da Óptica Geométrica</a></li>
-<li><a href="#_a_cor_de_um_corpo">6. A cor de um corpo</a></li>
+<li><a href="#_a_cor_de_um_corpo">6. A cor de um corpo</a>
+<ul class="sectlevel2">
+<li><a href="#_a_cor_do_céu">6.1. A cor do céu</a></li>
+</ul>
+</li>
 <li><a href="#_princípios_da_ótica_geométrica">7. Princípios da Ótica Geométrica</a></li>
-<li><a href="#_sombra_penumbra_e_eclipse">8. Sombra, penumbra e eclipse</a></li>
-<li><a href="#_referências">9. Referências</a></li>
+<li><a href="#_sombra_e_penumbra">8. Sombra e penumbra</a>
+<ul class="sectlevel2">
+<li><a href="#_eclipse">8.1. Eclipse</a></li>
+<li><a href="#_câmera_escura">8.2. Câmera escura</a></li>
+</ul>
+</li>
+<li><a href="#_exercícios_de_revisão">9. Exercícios de Revisão</a></li>
+<li><a href="#_referências">10. Referências</a></li>
 </ul>
 </div>
 </div>
@@ -539,8 +549,53 @@ $(document).on('page:load', ready2);
 <div class="paragraph">
 <p>Para representar a luz emitida pela chama de uma vela que atinge a vista de um observador, utilizaremos linhas orientadas que fornecem a direção e o sentido de propagação da luz. Tais linhas são denominadas <strong>raios de luz</strong>.</p>
 </div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img0.png" alt="img0">
+</div>
+<div class="title">Fig. 1. Raios de luz que chegam no observador. Fonte: Os Fundamentos da Física. Vol 2.</div>
+</div>
 <div class="paragraph">
-<p>Na prática, é impossível isolar um raio de luz, que, na verdade, é apenas uma representação gráfica da luz em propagação. O que realmente existe são os chamados <strong>feixes de luz</strong>, que representamos graficamente como um conjunto de raios de luz. Os feixes de luz podem ser <strong>paralelos</strong>, <strong>divergentes</strong> ou <strong>convergentes</strong>.</p>
+<p>Na prática, é impossível isolar um raio de luz, que, na verdade, é apenas uma representação gráfica da luz em propagação. O que realmente existe são os chamados <strong>feixes de luz</strong>, que representamos graficamente como um conjunto de raios de luz. Os feixes de luz podem ser:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Cilíndricos</strong>: os raios de luz são paralelos entre si.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img1.png" alt="img1">
+</div>
+<div class="title">Fig. 2. Feixe cilíndrico. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Cônicos divergentes</strong>: os raios de luz divergem de um mesmo ponto <strong>P</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img2.png" alt="img2">
+</div>
+<div class="title">Fig. 3. Feixe cônico divergente. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Cônicos convergentes</strong>: os raios de luz convergem para um mesmo ponto <strong>p</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img3.png" alt="img3">
+</div>
+<div class="title">Fig. 4. Feixe cônico convergente. Fonte: Tópicos de Física. Vol 2.</div>
 </div>
 </div>
 </div>
@@ -628,21 +683,99 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 <div class="sect1">
 <h2 id="_classificação_dos_meios">4. Classificação dos meios</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Meios transparentes</strong> são aqueles que permitem que a luz os atravesse descrevendo <strong>trajetórias regulares e bem definidas</strong>, ou seja, quando a luz atravessa o meio  e <strong>permite</strong> a visualização nítida dos objetos. O único meio absolutamente transparente é o vácuo, todavia, também podem ser considerados transparentes o ar atmosférico, a água pura, entre outros.</p>
-</li>
-<li>
-<p><strong>Meios translúcidos</strong> são aqueles em que a luz descreve <strong>trajetórias irregulares com intensa difusão (espelhamento aleatório)</strong>, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e <strong>não permite</strong> uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.</p>
-</li>
-<li>
-<p><strong>Meios opacos</strong> são aqueles através dos quais <strong>a luz não se propaga</strong>. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p><strong>A) Meios transparentes</strong> são aqueles que permitem que a luz os atravesse descrevendo <strong>trajetórias regulares e bem definidas</strong>, ou seja, quando a luz atravessa o meio  e <strong>permite</strong> a visualização nítida dos objetos. O único meio absolutamente transparente é o vácuo, todavia, também podem ser considerados transparentes o ar atmosférico, a água pura, entre outros.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img4.png" alt="img4">
+</div>
+<div class="title">Fig. 5. Meio transparente. Fonte: Os Fundamentos da Física. Vol 2.</div>
+</div>
+<div class="paragraph">
+<p><strong>B) Meios translúcidos</strong> são aqueles em que a luz descreve <strong>trajetórias irregulares com intensa difusão (espelhamento aleatório)</strong>, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e <strong>não permite</strong> uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img5.png" alt="img5">
+</div>
+<div class="title">Fig. 6. Meio translúcido. Fonte: Os Fundamentos da Física. Vol 2.</div>
+</div>
+<div class="paragraph">
+<p><strong>C) Meios opacos</strong> são aqueles através dos quais <strong>a luz não se propaga</strong>. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img6.png" alt="img6">
+</div>
+<div class="title">Fig. 7. Meio opaco. Fonte: Os Fundamentos da Física. Vol 2.</div>
 </div>
 <div class="paragraph">
 <p>Um meio em que todos os seus elementos de volume possuem as mesmas propriedades é denominado <strong>homogêneo</strong>. O vácuo é um meio homogêneo por excelência. O ar, em pequenas quantidades, pode ser considerado homogêneo. Mas a atmosfera com um todo não é homogênea.</p>
+</div>
+<div class="paragraph">
+<p>Quando as associadas a um elemento de volume independem da direção, o meio é chamado de <strong>isotrópico</strong>. Por exemplo, em um cristal cúbico, a velocidade da luz é igual qualquer que seja a direção em que é medida, caracterizando assim um meio isotrópico. Meios que simultaneamente são homogêneos e isotrópicos são denominados de <strong>ordinários</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Exercício Resolvido 1</strong></p>
+</div>
+<div class="paragraph">
+<p>Marque <strong>V</strong> para o item verdadeiro e <strong>F</strong> para o item falso:</p>
+</div>
+<div class="paragraph">
+<p>a) O ar atmosférico de uma sala é um meio transparente.<br>
+b) A água em camadas espessas é um meio transparente.<br>
+c) O vidro fosco é um meio translúcido.<br>
+d) A atmosfera terrestre, cuja densidade diminui com o aumento da altitude, é um meio homogêneo.<br>
+e) Nos meios transparentes e translúcidos a luz se propaga em linha reta.</p>
+</div>
+<div class="openblock click">
+<div class="title">Resposta</div>
+<div class="content">
+<div class='click_oblique'>
+a) <strong>Verdadeiro</strong>. O ar atmosférico existente em uma sala é um meio transparente.<br>
+b) <strong>Falso</strong>. A água em pequenas camadas e um meio transparente. Já em camadas espessas não é um meio transparente.<br>
+c) <strong>Verdadeiro</strong>. Através do vidro fosco os objetos não são vistos nitidamente. Logo é um meio translúcido.<br>
+d) <strong>Falso</strong>. Um meio homogêneo apresenta as mesmas propriedades em todos os seus pontos.<br>
+e) <strong>Falso</strong>. A luz se propaga em linha reta nos meios transparentes e homogêneos.
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Exercício Resolvido 2</strong></p>
+</div>
+<div class="paragraph">
+<p>Um ano-luz tem a dimensão de:</p>
+</div>
+<div class="paragraph">
+<p>a) tempo;<br>
+b) velocidade;<br>
+c) aceleração;<br>
+d) comprimento;<br>
+e) energia.</p>
+</div>
+<div class="openblock click">
+<div class="title">Resposta</div>
+<div class="content">
+<div class='click_oblique'>
+Um <strong>ano-luz</strong> é a distância que a luz percorre no vácuo durante um ano terrestre. A dimensão de ano-luz é <strong>comprimento</strong>.<br>
+<strong>Resposta: d.</strong>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Exercício Resolvido 3</strong></p>
+</div>
+<div class="paragraph">
+<p>Uma estrela está situada a \(4\;anos-luz\) da Terra. Qual a distância entre a estrela e a Terra em quilômetros?</p>
+</div>
+<div class="openblock click">
+<div class="title">Resposta</div>
+<div class="content">
+<div class='click_oblique'>
+\(1\;ano-luz\) corresponde aproximadamente a \(9,5\times 10^{12}\;km\). Portanto, \(4\;anos-luz\) correspondem a \(4\cdot 9,5\times 10^{12}\;km = 3,8.10^{13}\;km\).
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -657,17 +790,50 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 <li>
 <p><strong>Reflexão</strong> é o fenômeno que consiste no fato de a luz voltar a se propagar no meio de origem, após incidir na superfície de separação deste com outro meio.</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Quando o feixe de luz incidente e refletido são paralelos entre si, denominamos de <strong>reflexão regular</strong>, é o que acontece, por exemplo, em superfícies lisas e polidas.</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
 <p><strong>Refração</strong> é o fenômeno que consiste no fato de a luz passar de um meio para outro diferente.</p>
 </li>
 </ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img7.png" alt="img7">
+</div>
+<div class="title">Fig. 8. Luz incidente, refletida e refratada. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="paragraph">
+<p>De acordo com a regularidade da superfície que a luz incide, pode-se determinar dois tipos de reflexão e refração: <strong>regular</strong> e <strong>difusa</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Para entender melhor esses dois tipos de reflexão e refração, vamos pensar em suas situações:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Superfície da água de um lago isenta de qualquer tipo de perturbação.</p>
+</li>
+<li>
+<p>Superfície da água de um lago perturbado por gotas de chuva.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Na primeira situação, observa-se que após a incidência da luz na água, tanto o feixe de luz refletido quanto o refratado <strong>são de forma cilíndrica</strong>, ou seja, os raios são paralelos entre si. Essa situação caracteriza a reflexão e refração <strong>regular</strong>. Este tipo de reflexão e refração ocorrem em <strong>superfícies perfeitamente lisas</strong>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img8.png" alt="img8">
+</div>
+<div class="title">Fig. 9. Reflexão e Refração regular. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="paragraph">
+<p>Já na segunda situação, observa-se que após a incidência da luz na água, tanto o feixe de luz refletido quanto o refratado <strong>não são de forma cilíndrica</strong>, as componentes dos raios de luz possuem diversas direções e se espalham de forma aleatória. Essa situação caracteriza a reflexão e refração <strong>difusa</strong>. Este tipo de reflexão e refração ocorrem em <strong>superfícies que possuem irregularidades</strong>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img9.png" alt="img9">
+</div>
+<div class="title">Fig. 10. Reflexão e Refração difusa. Fonte: Tópicos de Física. Vol 2.</div>
 </div>
 </div>
 </div>
@@ -684,7 +850,13 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 <p>Por que quando iluminada pela luz do Sol, as folhas de uma árvore nos parecem verdes?</p>
 </div>
 <div class="paragraph">
-<p>Porque essas folhas refletem de forma difusa para o meio a cpr componente verde e absorvendo as demais cores componentes da luz branca.</p>
+<p>Porque essas folhas refletem de forma difusa para o meio a cor componente verde e absorvendo as demais cores componentes da luz branca.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img10.png" alt="img10">
+</div>
+<div class="title">Fig. 11. Cor de uma folha verde. Fonte: Tópicos de Física. Vol 2.</div>
 </div>
 <div class="paragraph">
 <p>Vale ressaltar os seguintes pontos:</p>
@@ -694,13 +866,63 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 <li>
 <p>Se vermos um corpo <strong>branco,</strong> é porque ele está <strong>refletindo todas as cores</strong> do espectro solar.</p>
 </li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img11.png" alt="img11">
+</div>
+<div class="title">Fig. 12. Corpo branco. Fonte: Os Fundamentos da Física. Vol 2.</div>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Se "vermos" um corpo <strong>preto</strong>, é porque ele está <strong>absorvendo todas as cores</strong> do espectro solar.</p>
 </li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img12.png" alt="img12">
+</div>
+<div class="title">Fig. 13. Corpo negro. Fonte: Os Fundamentos da Física. Vol 2.</div>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Um corpo que nos parece vermelho quando iluminado pela luz branca solar se apresentará escuro quando iluminado por luz monocromática de cor diferente da vermelha (azul, por exemplo).</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>Quando observamos um objeto através de uma lâmina de acrílico vermelha, por exemplo, apenas conseguiremos distinguir regiões vermelhas e escuras. Isto acorre porque a lâmina funciona como um <strong>filtro</strong>, que refrata (deixa passar) seletivamente a luz vermelha, absorvendo substancialmente as demais cores do espectro (regiões escuras).</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img13.png" alt="img13">
+</div>
+<div class="title">Fig. 14. Esquema da refração seletiva. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="sect2">
+<h3 id="_a_cor_do_céu">6.1. A cor do céu</h3>
+<div class="paragraph">
+<p>Ao atravessar a atmosfera terrestre, a luz sofre difusão, isto é, espalhamento, de maneira mais acentuada na luz de cor <strong>azul</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Se não existe atmosfera, o céu seria sempre <strong>negro</strong>, exceto na direção do Sol. Este fato é notado, por exemplo, em grandes altitudes e na Lua (por não ter atmosfera).</p>
+</div>
+<div class="paragraph">
+<p>As gotas de água que compõem as nuvens espalham, com a mesma intensidade, luzes de todas as cores. Por isto a nuvens são vistas <strong>brancas</strong>.</p>
+</div>
+<div class="paragraph">
+<p>No nascer e por Sol, a luz atravessa uma espessura maior de atmosfera antes de atingir a atmosfera. Nessas condições, em virtude do maior espalhamento da luz azul e de cores próxima a ela, recebemos a luz subtraída destas cores, por este motivo, o Sol e o céu ao seu redor são vistos <strong>avermelhados</strong>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img14.png" alt="img14">
+</div>
+<div class="title">Fig. 15. Cor do céu. Fonte: Física Clássica. Vol 2.</div>
+</div>
 </div>
 </div>
 </div>
@@ -723,6 +945,12 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 <div class="paragraph">
 <p>Este princípio constitui a base para a explicação de diversos fenômenos, como, por exemplo, a formação de sombras e penumbras.</p>
 </div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img15.png" alt="img15">
+</div>
+<div class="title">Fig. 16. Propagação retilínea. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -735,6 +963,12 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 </div>
 <div class="paragraph">
 <p>Isto significa que, mesmo havendo cruzamento entre raios de luz, cada um segue seu caminho se nada tivesse acontecido.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img16.png" alt="img16">
+</div>
+<div class="title">Fig. 17. Independência dos raios. Fonte: Os Fundamentos da Física. Vol 2.</div>
 </div>
 <div class="ulist">
 <ul>
@@ -749,16 +983,202 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 <div class="paragraph">
 <p>Ou seja, se a luz faz um determinado percurso, é capaz de fazer o mesmo percurso em sentido inverso.</p>
 </div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img17.png" alt="img17">
+</div>
+<div class="title">Fig. 18. Reversibilidade. Fonte: Os Fundamentos da Física. Vol 2.</div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_sombra_penumbra_e_eclipse">8. Sombra, penumbra e eclipse</h2>
+<h2 id="_sombra_e_penumbra">8. Sombra e penumbra</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Primeiramente, vamos considerar um fonte puntiforme (<strong>F</strong>), um disco opaco (<strong>D</strong>) e um anteparo também opaco (<strong>A</strong>). Na montagem sugerida na figura, podemos perceber que, por causa da <strong>propagação retilínea da luz</strong>, teremos uma região desprovida de iluminação entre <strong>D</strong> e <strong>A</strong>, esta região (que é um tronco de cone) denominamos de <strong>sombra</strong>. Em <strong>A</strong> temos uma região circular também isenta de iluminação, que chamamos de <strong>sombra projetada</strong>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img18.png" alt="img18">
+</div>
+<div class="title">Fig. 19. Sombra produzida por um fonte puntiforme. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="paragraph">
+<p>Neste segundo caso, pelo fato da fonte de luz ser extensa, além das regiões de sombra e sombra projetada, teremos ainda regiões de <strong>penumbra</strong> e <strong>penumbra projetada</strong>. Nestas regiões a iluminação será <strong>parcial</strong>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img19.png" alt="img19">
+</div>
+<div class="title">Fig. 20. Sombra produzida por um fonte extensa. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="sect2">
+<h3 id="_eclipse">8.1. Eclipse</h3>
+<div class="paragraph">
+<p>Os eclipses são fenômenos astronômicos regulares e previsíveis. A explicação para a ocorrência dos eclipses está relacionada com a <strong>propagação retilínea da luz</strong>. É com base neste princípio que podemos explicar o desaparecimento temporário da Lua em certas ocasiões de lua cheia ou até mesmo do Sol, em algumas situações de lua Nova.</p>
+</div>
+<div class="paragraph">
+<p>Podemos destacar dois casos.</p>
+</div>
+<div class="paragraph">
+<p>1) <strong>Eclipse da lua</strong>: neste caso, a Lua situa-se no cone de sombra da Terra.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img20.png" alt="img20">
+</div>
+<div class="title">Fig. 21. Eclipse da Lua. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="paragraph">
+<p>O eclipse da Lua ocorre na fase de <strong>lua cheia</strong>.</p>
+</div>
+<div class="paragraph">
+<p>1) <strong>Eclipse do Sol</strong>: neste caso, a Lua projeta sobre a Terra uma região de sombra e penumbra.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img21.png" alt="img21">
+</div>
+<div class="title">Fig. 22. Eclipse do Sol. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Região 1</strong>: sombra da Lua.</p>
+</li>
+<li>
+<p><strong>Região 2</strong>: penumbra.</p>
+</li>
+<li>
+<p><strong>Região 3</strong>: sombra da Lua projetada na Terra. Nesta região ocorre o eclipse total ou anular do Sol.</p>
+</li>
+<li>
+<p><strong>Região 4</strong>: penumbra projetada. Nesta região ocorre o elipse parcial do Sol, caso em que uma parte do "disco solar" permanece visível.</p>
+</li>
+<li>
+<p><strong>Região 5</strong>: não há eclipse nesta região. O "disco solar" é visualizado integralmente.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>O eclipse da Sol ocorre na fase de <strong>lua nova</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_câmera_escura">8.2. Câmera escura</h3>
+<div class="paragraph">
+<p>A <strong>câmera escura</strong> nada mais é que uma caixa de <strong>paredes opacas</strong>, sendo uma delas dotada de um orifício <strong>\(O\)</strong>, diante do qual é colocado um corpo luminoso.</p>
+</div>
+<div class="paragraph">
+<p>Os raios emanados pelo corpo, após atravessarem o orifício <strong>\(O\)</strong>, incidem na parede ao fundo da caixa, projetando uma <strong>imagem semelhante</strong> ao corpo, porém <strong>invertida</strong>.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="images/img22.png" alt="img22">
+</div>
+<div class="title">Fig. 23. Câmera escura. Fonte: Tópicos de Física. Vol 2.</div>
+</div>
+<div class="paragraph">
+<p>Considerando a figura, podemos notar que os triângulos \(OAB\) e \(OA'B'\) são semelhantes. Sendo assim:
+\begin{equation*}
+    \dfrac{A&#8217;B'}{AB}=\dfrac{b}{a}
+\end{equation*}</p>
+</div>
+<div class="paragraph">
+<p>Para uma mesma câmera e um mesmo corpo luminoso, os comprimentos <strong>\(b\)</strong> (profundidade) e <strong>\(AB\)</strong> (comprimento do corpo luminoso) são constantes. Desta forma, podemos afirmar que <strong>\(A'B'\)</strong> (comprimento da figura projetada) e <strong>\(a\)</strong> (distância do corpo luminoso ao orifício) são <strong>inversamente proporcionais</strong>. Por exemplo, se dobramos a distância <strong>\(A'B'\)</strong>, a distância <strong>\(a\)</strong> será reduzida pela metade.</p>
+</div>
+<div class="paragraph">
+<p><strong>Exercício Resolvido 4</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>(UNIRIO RJ/1995)</strong> Durante a final da Copa do Mundo, um cinegrafista, desejando alguns efeitos especiais, gravou cena em um estúdio completamente escuro, onde existia uma bandeira da "Azurra" (azul e branca) que foi iluminada por um feixe de luz amarela monocromática. Quando a cena foi exibida ao público, a bandeira apareceu:</p>
+</div>
+<div class="paragraph">
+<p>a)	verde e branca.<br>
+b)	verde e amarela.<br>
+c)	preta e branca.<br>
+d)	preta e amarela.<br>
+e)	azul e branca.</p>
+</div>
+<div class="openblock click">
+<div class="title">Resposta</div>
+<div class="content">
+<div class='click_oblique'>
+A cor azul absorve a luz monocromática amarela, portanto observamos o <strong>preto.</strong> A cor branca reflete a cor amarela, portanto continuamos a observar o <strong>amarela</strong>.<br>
+<strong>Resposta: d.</strong>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Exercício Resolvido 5</strong></p>
+</div>
+<div class="paragraph">
+<p>Marque <strong>V</strong> para verdadeiro e <strong>F</strong> para falso:</p>
+</div>
+<div class="paragraph">
+<p>a) A formação de penumbra de um corpo opaco ocorre quando a fonte de luz é extensa.<br>
+b) O eclipse do Sol só ocorre numa fase de Lua Cheia e, portanto, todos os meses têm-se eclipses do Sol.<br>
+c) Quando ocorre eclipse do Sol a posição relativa dos três astros é Sol, Terra e Lua.<br>
+d) Uma pessoa na Terra se situa na penumbra da Lua determinada pelo Sol. Esta pessoa presencia um eclipse parcial do Sol.<br></p>
+</div>
+<div class="openblock click">
+<div class="title">Resposta</div>
+<div class="content">
+<div class='click_oblique'>
+a) <strong>Verdadeiro</strong>. Quando uma fonte de luz extensa é colocada próxima de um corpo opaco observam-se regiões parcialmente iluminadas. São as penumbras.<br>
+b) <strong>Falso</strong>. No eclipse do Sol, a posição relativa dos astros é Sol, Lua e Terra. Portanto, o eclipse do Sol ocorre na fase de Lua Nova. Os eclipses não ocorrem todos os meses pois as órbitas da Lua em torno da Terra e da Terra em torno do Sol não pertencem ao mesmo plano. Os eclipses ocorrem quando a orbita da Lua intercepta o plano da órbita da Terra e ainda deve haver um alinhamento entre os três astros.<br>
+c) <strong>Falso</strong>. A posição relativa dos astros é Sol, Lua e Terra.<br>
+d) <strong>Verdadeiro</strong>. Estando na penumbra da Lua determinada pelo Sol o eclipse é parcial.<br>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Exercício Resolvido 6</strong></p>
+</div>
+<div class="paragraph">
+<p>Entre uma fonte puntiforme e uma parede, coloca-se um lápis de \(20\;cm\) de altura. A fonte de luz e o centro do lápis estão numa mesma reta perpendicular à parede. O lápis se encontra a \(20\;cm\) da fonte e a \(60\;cm\) da parede. Determine o comprimento da sombra do lápis projetada na parede.</p>
+</div>
+<div class="openblock click">
+<div class="title">Resposta</div>
+<div class="content">
+<div class='click_oblique'>
+Da semelhança dos triângulos \(FAB\) e \(FCD\), temos:
+\begin{align*}
+    \dfrac{L}{20} &amp;= \dfrac{80}{20} \\
+    L &amp;= 80
+\end{align*}
+<strong>Resposta</strong>: \(80\;cm\).
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Exercício Resolvido 7</strong></p>
+</div>
+<div class="paragraph">
+<p>Um objeto \(AB\) de altura \(10\;cm\) encontra-se a \(30\;cm\) de uma câmara escura de orifício, cujo comprimento é de \(45\;cm\).</p>
+</div>
+<div class="paragraph">
+<p>a) Qual é a altura da imagem?<br>
+b) Aproxima-se o objeto da câmara. A altura da imagem aumenta ou diminui?</p>
+</div>
+<div class="openblock click">
+<div class="title">Resposta</div>
+<div class="content">
+<div class='click_oblique'>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exercícios_de_revisão">9. Exercícios de Revisão</h2>
 <div class="sectionbody">
 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_referências">9. Referências</h2>
+<h2 id="_referências">10. Referências</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>CALÇADA, Caio Sérgio; SAMPAIO, José Luiz. Física Clássica: Termologia, Óptica e Ondas. Atual Editora, São Paulo, 2012.</p>
@@ -781,7 +1201,7 @@ Sendo assim, a velocidade da luz no vácuo é de aproximadamente \(9,5\times 10^
 <div id="footer">
 <div id="footer-text">
 Versão 1.0<br>
-Última atualização 2020-11-05 00:03:25 -0300
+Última atualização 2020-11-09 22:27:00 -0300
 </div>
 </div>
 <script type="text/x-mathjax-config">
