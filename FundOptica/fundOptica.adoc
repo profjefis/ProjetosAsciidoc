@@ -127,7 +127,7 @@ e)	somente os planetas do sistema solar.
 
 [click.resposta]
 --
-Após $24\;h$, não conseguiríamos observar o Sol e nem a Lua (corpo ilumindo pelo Sol). Portanto, apenas conseguiríamos observar as estrelas. +
+Após $24\;h$, não conseguiríamos observar o Sol e nem a Lua (corpo iluminado pelo Sol). Portanto, apenas conseguiríamos observar as estrelas. +
 *Resposta: c.*
 --
 
@@ -280,7 +280,7 @@ image::img19.png[title="Sombra produzida por um fonte extensa. Fonte: Tópicos d
 
 === Eclipse
 
-Os eclipses são fenômenos astronômicos regulares e previsíveis. A explicação para a ocorrência dos eclipses está relacionada com a *propagação retilínea da luz*. É com base neste princípio que podemos explicar o desaparecimento temporário da Lua em certas ocasiões de lua cheia ou até mesmo do Sol, em algumas situações de lua Nova.
+Os eclipses são fenômenos astronômicos regulares e previsíveis. A explicação para a ocorrência dos eclipses está relacionada com a *propagação retilínea da luz*. É com base neste princípio que podemos explicar o desaparecimento temporário da Lua em certas ocasiões de lua cheia ou até mesmo do Sol, em algumas situações de lua nova.
 
 Podemos destacar dois casos.
 
