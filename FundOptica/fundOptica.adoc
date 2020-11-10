@@ -15,12 +15,11 @@ include::locale/attributes-pt_BR.adoc[]
 
 Caro aluno, logo abaixo apresentarei *os principais objetivos que você deve alcançar* ao estudar este conteúdo:
 
-- *Compreender* processos em que o fornecimento de calor a um sistema, ou corpo, pode produzir aumento de seu volume, resultando na realização de trabalho.
-- *Compreender* o primeiro princípio da termodinâmica: a quantidade de calor fornecida a um sistema é igual ao trabalho que ele realiza mais a variação de sua energia interna.
-- *Compreender* que o Primeiro Princípio da Termodinâmica expressa quantitativamente a Lei de Conservação da Energia.
-- *Saber aplicar* o Primeiro Princípio da Termodinâmica para resolver problemas envolvendo calor, trabalho e energia interna de um sistema.
-- *Compreender* que o funcionamento de máquinas térmicas requer sempre troca de calor entre duas fontes, uma quente e outra fria.
-- *Compreender* que, numa máquina térmica, só uma parte do calor fornecido é transformado em trabalho.
+- *Compreender* que a luz em um meio uniforme desloca em linha reta e com velocidade finita.
+- *Saber explicar* como as sombras são formadas.
+- *Saber explicar* como objetos não luminosos podem ser vistos.
+- *Conhecer* os efeitos dos filtros na luz branca.
+- *Compreender* como objetos coloridos aparecem sob a luz branca e outras cores.
 
 == Raios de luz e feixes de luz
 
@@ -42,11 +41,11 @@ image::img3.png[title="Feixe cilíndrico. Fonte: Tópicos de Física. Vol 2.", a
 
 - *Cônicos divergentes*: os raios de luz divergem de um mesmo ponto *P*.
 
-image::img2.png[title="Feixe cônico divergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
+image::img1.png[title="Feixe cônico divergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
-- *Cônicos convergentes*: os raios de luz convergem para um mesmo ponto *p*.
+- *Cônicos convergentes*: os raios de luz convergem para um mesmo ponto *P*.
 
-image::img1.png[title="Feixe cônico convergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
+image::img2.png[title="Feixe cônico convergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
 == Fontes de luz
 
@@ -100,15 +99,15 @@ Esta unidade é bastante utilizada na *Astronomia*, devido às distância das es
 
 == Classificação dos meios
 
-*A) Meios transparentes* são aqueles que permitem que a luz os atravesse descrevendo *trajetórias regulares e bem definidas*, ou seja, quando a luz atravessa o meio  e *permite* a visualização nítida dos objetos. O único meio absolutamente transparente é o vácuo, todavia, também podem ser considerados transparentes o ar atmosférico, a água pura, entre outros.
+- *Meios transparentes* são aqueles que permitem que a luz os atravesse descrevendo *trajetórias regulares e bem definidas*, ou seja, quando a luz atravessa o meio  e *permite* a visualização nítida dos objetos. O único meio absolutamente transparente é o vácuo, todavia, também podem ser considerados transparentes o ar atmosférico, a água pura, entre outros.
 
 image::img4.png[title="Meio transparente. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
 
-*B) Meios translúcidos* são aqueles em que a luz descreve *trajetórias irregulares com intensa difusão (espelhamento aleatório)*, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e *não permite* uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.
+- *Meios translúcidos* são aqueles em que a luz descreve *trajetórias irregulares com intensa difusão (espelhamento aleatório)*, provocada pelas partículas deste meio, ou seja, quando a luz atravessa o meio e *não permite* uma visão nítida dos objetos. É o que ocorre, por exemplo, quando a luz atravessa a neblina, o papel-manteiga, entre outros.
 
 image::img5.png[title="Meio translúcido. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
 
-*C) Meios opacos* são aqueles através dos quais *a luz não se propaga*. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.
+- *Meios opacos* são aqueles através dos quais *a luz não se propaga*. Depois de incidir em um meio opaco, a luz é parcialmente absorvida e parcialmente refletida pelo meio. São opacos os seguinte meios: madeira, alvenaria, metais, entre outros.
 
 image::img6.png[title="Meio opaco. Fonte: Os Fundamentos da Física. Vol 2.", align="center"]
 
@@ -118,21 +117,18 @@ Quando as associadas a um elemento de volume independem da direção, o meio é 
 
 *Exercício Resolvido {counter:exeres}*
 
-Marque *V* para o item verdadeiro e *F* para o item falso:
+*(FUVEST SP)* Admita que o Sol subitamente "morresse", ou seja, sua luz deixasse de ser emitida. Vinte e quatro horas após esse evento, um eventual sobrevivente, olhando para o céu, sem nuvens, veria:
 
-a) O ar atmosférico de uma sala é um meio transparente. +
-b) A água em camadas espessas é um meio transparente. +
-c) O vidro fosco é um meio translúcido. +
-d) A atmosfera terrestre, cuja densidade diminui com o aumento da altitude, é um meio homogêneo. +
-e) Nos meios transparentes e translúcidos a luz se propaga em linha reta.
+a)	a Lua e estrelas; +
+b)	somente a Lua; +
+c)	somente estrelas; +
+d)	uma completa escuridão; +
+e)	somente os planetas do sistema solar.
 
 [click.resposta]
 --
-a) *Verdadeiro*. O ar atmosférico existente em uma sala é um meio transparente. +
-b) *Falso*. A água em pequenas camadas e um meio transparente. Já em camadas espessas não é um meio transparente. +
-c) *Verdadeiro*. Através do vidro fosco os objetos não são vistos nitidamente. Logo é um meio translúcido. +
-d) *Falso*. Um meio homogêneo apresenta as mesmas propriedades em todos os seus pontos. +
-e) *Falso*. A luz se propaga em linha reta nos meios transparentes e homogêneos.
+Após $24\;h$, não conseguiríamos observar o Sol e nem a Lua (corpo ilumindo pelo Sol). Portanto, apenas conseguiríamos observar as estrelas. +
+*Resposta: c.*
 --
 
 *Exercício Resolvido {counter:exeres}*
@@ -158,6 +154,25 @@ Uma estrela está situada a $4\;anos-luz$ da Terra. Qual a distância entre a es
 [click.resposta]
 --
 $1\;ano-luz$ corresponde aproximadamente a $9,5\times 10^{12}\;km$. Portanto, $4\;anos-luz$ correspondem a $4\cdot 9,5\times 10^{12}\;km = 3,8\times 10^{13}\;km$.
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+Marque *V* para o item verdadeiro e *F* para o item falso:
+
+a) O ar atmosférico de uma sala é um meio transparente. +
+b) A água em camadas espessas é um meio transparente. +
+c) O vidro fosco é um meio translúcido. +
+d) A atmosfera terrestre, cuja densidade diminui com o aumento da altitude, é um meio homogêneo. +
+e) Nos meios transparentes e translúcidos a luz se propaga em linha reta.
+
+[click.resposta]
+--
+a) *Verdadeiro*. O ar atmosférico existente em uma sala é um meio transparente. +
+b) *Falso*. A água em pequenas camadas e um meio transparente. Já em camadas espessas não é um meio transparente. +
+c) *Verdadeiro*. Através do vidro fosco os objetos não são vistos nitidamente. Logo é um meio translúcido. +
+d) *Falso*. Um meio homogêneo apresenta as mesmas propriedades em todos os seus pontos. +
+e) *Falso*. A luz se propaga em linha reta nos meios transparentes e homogêneos.
 --
 
 == Fenômenos da Óptica Geométrica
@@ -339,6 +354,8 @@ d) *Verdadeiro*. Estando na penumbra da Lua determinada pelo Sol o eclipse é pa
 
 Entre uma fonte puntiforme e uma parede, coloca-se um lápis de $20\;cm$ de altura. A fonte de luz e o centro do lápis estão numa mesma reta perpendicular à parede. O lápis se encontra a $20\;cm$ da fonte e a $60\;cm$ da parede. Determine o comprimento da sombra do lápis projetada na parede.
 
+image::imgexe1.png[title="Resolução. Fonte: blog osfundamentosdafisica. Vol 2.", align="center"]
+
 [click.resposta]
 --
 Da semelhança dos triângulos $FAB$ e $FCD$, temos:
@@ -356,8 +373,20 @@ Um objeto $AB$ de altura $10\;cm$ encontra-se a $30\;cm$ de uma câmara escura d
 a) Qual é a altura da imagem? +
 b) Aproxima-se o objeto da câmara. A altura da imagem aumenta ou diminui?
 
+image::imgexe2.png[title="Resolução. Fonte: blog osfundamentosdafisica. Vol 2.", align="center"]
+
 [click.resposta]
 --
+a)*Dados*: $o=10\;cm$ $p=30\;cm$ $p'=23\;cm$ +
+Pela semelhança de triângulos:
+\begin{align*}
+    \dfrac{i}{o}    &= \dfrac{p'}{p} \\
+    i               &= o\cdot \dfrac{p}{p'} \\
+    i               &= 10\cdot \dfrac{45}{30} \\
+    i               &= 15
+\end{align*}
+*Resposta*: $15\;cm$. +
+b) Aproximando-se o objeto da câmara o valor de $p$ diminui e portanto a altura $i$ da imagem aumenta.
 --
 
 == Exercícios de Revisão
