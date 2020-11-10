@@ -2,7 +2,7 @@
 :author: Jefferson Rodrigues de Oliveira 
 :email: jefferson.oliveira@ifes.edu.br
 :revnumber: 1.0
-:revdate: 09-11-2020
+:revdate: 10-11-2020
 :toc: left
 :sectnums: 0
 :stem: latexmath
@@ -38,7 +38,7 @@ Na prática, é impossível isolar um raio de luz, que, na verdade, é apenas um
 
 - *Cilíndricos*: os raios de luz são paralelos entre si.
 
-image::img1.png[title="Feixe cilíndrico. Fonte: Tópicos de Física. Vol 2.", align="center"]
+image::img3.png[title="Feixe cilíndrico. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
 - *Cônicos divergentes*: os raios de luz divergem de um mesmo ponto *P*.
 
@@ -46,7 +46,7 @@ image::img2.png[title="Feixe cônico divergente. Fonte: Tópicos de Física. Vol
 
 - *Cônicos convergentes*: os raios de luz convergem para um mesmo ponto *p*.
 
-image::img3.png[title="Feixe cônico convergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
+image::img1.png[title="Feixe cônico convergente. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
 == Fontes de luz
 
@@ -157,7 +157,7 @@ Uma estrela está situada a $4\;anos-luz$ da Terra. Qual a distância entre a es
 
 [click.resposta]
 --
-$1\;ano-luz$ corresponde aproximadamente a $9,5\times 10^{12}\;km$. Portanto, $4\;anos-luz$ correspondem a $4\cdot 9,5\times 10^{12}\;km = 3,8.10^{13}\;km$.
+$1\;ano-luz$ corresponde aproximadamente a $9,5\times 10^{12}\;km$. Portanto, $4\;anos-luz$ correspondem a $4\cdot 9,5\times 10^{12}\;km = 3,8\times 10^{13}\;km$.
 --
 
 == Fenômenos da Óptica Geométrica
