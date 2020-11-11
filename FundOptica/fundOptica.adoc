@@ -117,6 +117,22 @@ Quando as associadas a um elemento de volume independem da direção, o meio é 
 
 *Exercício Resolvido {counter:exeres}*
 
+*(Fuvest-SP)* Num dia sem nuvens, ao meio-dia, a sombra projetada no chão por uma esfera de 1,0 cm de diâmetro é bem nítida se ela estiver a 10 cm do chão. Entretanto, se a esfera estiver a 200 cm do chão, sua sombra é muito pouco nítida. Pode-se afirmar que a principal causa do efeito observado é que:
+
+a) o Sol é uma fonte extensa de luz. +
+b) o índice de refração do ar depende da temperatura. +
+c) a luz é um fenômeno ondulatório. +
+d) a luz do Sol contém diferentes cores. +
+e) a difusão da luz no ar "borra" a sombra.
+
+[click.resposta]
+--
+A sombra da esfera torna-se pouco nítida ao ser afastada do solo, tal fato se dá devido ao Sol ser uma fonte de luz extensa. +
+*Resposta: a*.
+--
+
+*Exercício Resolvido {counter:exeres}*
+
 *(FUVEST SP)* Admita que o Sol subitamente "morresse", ou seja, sua luz deixasse de ser emitida. Vinte e quatro horas após esse evento, um eventual sobrevivente, olhando para o céu, sem nuvens, veria:
 
 a)	a Lua e estrelas; +
@@ -355,7 +371,7 @@ image::img20.png[title="Eclipse da Lua. Fonte: Tópicos de Física. Vol 2.", ali
 
 O eclipse da Lua ocorre na fase de *lua cheia*.
 
-1) *Eclipse do Sol*: neste caso, a Lua projeta sobre a Terra uma região de sombra e penumbra. 
+2) *Eclipse do Sol*: neste caso, a Lua projeta sobre a Terra uma região de sombra e penumbra. 
 
 image::img21.png[title="Eclipse do Sol. Fonte: Tópicos de Física. Vol 2.", align="center"]
 
@@ -396,6 +412,22 @@ e)	azul e branca.
 --
 A cor azul absorve a luz monocromática amarela, portanto observamos o *preto.* A cor branca reflete a cor amarela, portanto continuamos a observar o *amarela*. +
 *Resposta: d.*
+--
+
+*Exercício Resolvido {counter:exeres}*
+
+*(UFU MG/2014)* Em um ambiente totalmente escuro, é feito um experimento, que consiste em colocar nesse ambiente uma pessoa com visão normal, diante de uma folha em branco, de um gato preto e de um espelho plano.+
+Qual desses três elementos a pessoa verá no ambiente?
+
+a)	Nenhum deles, pois o ambiente está desprovido totalmente de luz. +
+b)	A folha em branco, pois trata-se do objeto mais claro presente no ambiente. +
+c)	O espelho plano, pois possui uma superfície amplamente refletora. +
+d)	O gato preto, pois seus olhos brilham, mesmo que no escuro. +
+
+[click.resposta]
+--
+Se o ambiente está totalmente escuro, ou seja, está isento de qualquer tipo de conte de luz, não será possível observar nada. +
+*Resposta: a.*
 --
 
 *Exercício Resolvido {counter:exeres}*
